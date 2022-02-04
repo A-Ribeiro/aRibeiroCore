@@ -47,6 +47,12 @@
 #include <memory.h>
 #include <string.h>
 
+#if defined(OS_TARGET_linux) || defined(OS_TARGET_mac)
+
+    #include <sys/errno.h>
+
+#endif
+
 
 /// \brief Exit application if boolean expression is true.
 ///
