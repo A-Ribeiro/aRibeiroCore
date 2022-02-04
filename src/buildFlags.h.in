@@ -1,0 +1,6 @@
+#ifndef __aribeiro_build_flags_H__
+#define __aribeiro_build_flags_H__
+
+@cmake_build_flags@
+
+#endif
