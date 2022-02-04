@@ -22,7 +22,7 @@ const float _180_PI = 57.2957795130823208767981548141052f;///< 180/PI. Used to c
 /// Example:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// // 90.0f
@@ -38,7 +38,7 @@ const float _180_PI = 57.2957795130823208767981548141052f;///< 180/PI. Used to c
 /// Example:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// // PI/2.0f
@@ -54,7 +54,7 @@ const float _180_PI = 57.2957795130823208767981548141052f;///< 180/PI. Used to c
 /// Example:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// const FloatFromBinaryContent SPD_FLOAT_INFINITY_UNION = {0x7f800000};
@@ -101,7 +101,7 @@ const float SPD_FLT_INF = SPD_FLOAT_INFINITY_UNION.value;
 /// Example:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// float a,b;
@@ -123,7 +123,7 @@ const float EPSILON = 1e-4f;
 /// Example:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// float a,b;

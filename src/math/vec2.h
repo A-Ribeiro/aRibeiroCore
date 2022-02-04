@@ -23,7 +23,7 @@ namespace aRibeiro{
 /// Example:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// vec2 a, b, result;
@@ -68,7 +68,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec = vec2();
@@ -88,7 +88,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec = vec2( 0.5f );
@@ -107,7 +107,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec = vec2( 0.1f, 0.2f );
@@ -128,7 +128,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec_source;
@@ -155,7 +155,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec_a, vec_b;
@@ -185,7 +185,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec_a, vec_b;
@@ -297,7 +297,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec_a, vec_b;
@@ -324,7 +324,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec, vec_b;
@@ -355,7 +355,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec, vec_b;
@@ -386,7 +386,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec;
@@ -420,7 +420,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec, vec_b;
@@ -451,7 +451,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec, vec_b;
@@ -500,7 +500,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec;
@@ -531,7 +531,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec;
@@ -562,7 +562,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec;
@@ -593,7 +593,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec;
@@ -622,7 +622,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 vec;
@@ -645,7 +645,7 @@ class _SSE2_ALIGN_PRE vec2{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// void process_vec( const vec2 &vec ) {

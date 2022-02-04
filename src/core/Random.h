@@ -25,7 +25,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// Random::setSeed(time(NULL));
@@ -42,7 +42,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// double value = Random::getDouble();
@@ -60,7 +60,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// float value = Random::getFloat();
@@ -78,7 +78,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec2 value = Random::getVec2();
@@ -96,7 +96,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 value = Random::getVec3();
@@ -114,7 +114,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec4 value = Random::getVec4();
@@ -132,7 +132,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 value = Random::getMat4();
@@ -152,7 +152,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// quat value = Random::getQuat();
@@ -168,7 +168,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec2 value = Random::getVec2Direction();
@@ -184,7 +184,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 value = Random::getVec3Direction();
@@ -202,7 +202,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec4 value = Random::getVec4Ptn();
@@ -220,7 +220,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec4 value = Random::getVec4Vec();
@@ -236,7 +236,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec4 value = Random::getVec4VecDirection();
@@ -254,7 +254,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// // valid index positions: [0..5]

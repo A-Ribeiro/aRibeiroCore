@@ -39,7 +39,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -66,7 +66,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -98,7 +98,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -122,7 +122,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -145,7 +145,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -169,7 +169,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -193,7 +193,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -215,7 +215,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -238,7 +238,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -258,7 +258,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -281,7 +281,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -301,7 +301,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -323,7 +323,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -343,7 +343,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -367,7 +367,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -396,7 +396,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -422,7 +422,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -446,7 +446,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -468,7 +468,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -496,7 +496,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -522,7 +522,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -546,7 +546,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -573,7 +573,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///
@@ -601,7 +601,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     /// using namespace aRibeiro::collision;
     ///

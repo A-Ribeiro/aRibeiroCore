@@ -270,7 +270,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// // defining an aligned vector
@@ -384,7 +384,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// // defining an aligned map
@@ -415,7 +415,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// // defining an aligned vector

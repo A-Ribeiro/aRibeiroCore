@@ -202,7 +202,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 point = vec4( 1.0f, 2.0f, 3.0f, 1.0f );
@@ -241,7 +241,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 projection = projection_perspective_rh_negative_one( 60.0f, screenWidth/screenHeight, 0.001f, 1000.0f );
@@ -273,7 +273,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 _3DVector;
@@ -315,7 +315,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 _3DPoint;
@@ -363,7 +363,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// // polar coord with angle = 30 degrees and radius = 10
@@ -397,7 +397,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 result;
@@ -437,7 +437,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 result;
@@ -478,7 +478,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 result;
@@ -515,7 +515,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat result = quatFromEuler( DEG2RAD(15.0f), DEG2RAD(0.0f), DEG2RAD(50.0f) ) ;
@@ -589,7 +589,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a, b;
@@ -674,7 +674,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, b;
@@ -745,7 +745,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a, b;
@@ -775,7 +775,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat a, b;
@@ -807,7 +807,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a;
@@ -855,7 +855,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a;
@@ -928,7 +928,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a;
@@ -993,7 +993,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat a,b,c;
@@ -1076,7 +1076,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transformation = eulerRotate( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) );
@@ -1146,7 +1146,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transformation = eulerRotate( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) ) * translate( 1.0f, 0.0f, 5.0f );
@@ -1221,7 +1221,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transformation = eulerRotate( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) ) * translate( 1.0f, 0.0f, 5.0f );
@@ -1298,7 +1298,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat a = quatFromEuler( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) );
@@ -1400,7 +1400,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat a = quatFromEuler( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) );
@@ -1423,7 +1423,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat a = quatFromEuler( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) );
@@ -1473,7 +1473,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat a = quatFromEuler( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) );
@@ -1547,7 +1547,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a = vec2( 1, 0 );
@@ -1571,7 +1571,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a = vec3( 1, 0, 0 );
@@ -1611,7 +1611,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat a = quatFromEuler( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) );
@@ -1713,7 +1713,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a = vec3( 1 ,0 ,0 );
@@ -1776,7 +1776,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a = vec2( 1 , -1 );
@@ -1814,7 +1814,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a = vec3( 1 , -1 ,0 );
@@ -1901,7 +1901,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float ior_air = 1.0f;
@@ -1951,7 +1951,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat input;
@@ -1979,7 +1979,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 input;
@@ -2005,7 +2005,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 input;
@@ -2031,7 +2031,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 input;
@@ -2055,7 +2055,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat input;
@@ -2083,7 +2083,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 input;
@@ -2109,7 +2109,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 input;
@@ -2135,7 +2135,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 input;
@@ -2163,7 +2163,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a, b;
@@ -2191,7 +2191,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a, b;
@@ -2219,7 +2219,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, b;
@@ -2248,7 +2248,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, b;
@@ -2276,7 +2276,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a, b;
@@ -2304,7 +2304,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, b;
@@ -2337,7 +2337,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a, unitV;
@@ -2369,7 +2369,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, unitV;
@@ -2411,7 +2411,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a, unitV;
@@ -2454,7 +2454,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a, unitV;
@@ -2487,7 +2487,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, unitV;
@@ -2532,7 +2532,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a, unitV;
@@ -2589,7 +2589,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a, unitV;
@@ -2638,7 +2638,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, unitV;
@@ -2704,7 +2704,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a, unitV;
@@ -2752,7 +2752,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 center = vec2( 0, 0 );
@@ -2784,7 +2784,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 center = vec3( 0, 0, 0 );
@@ -2816,7 +2816,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 center = vec4( 0, 0, 0, 0 );
@@ -2847,7 +2847,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 input;
@@ -2872,7 +2872,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 input;
@@ -2897,7 +2897,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 input;
@@ -2926,7 +2926,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a, b;
@@ -2959,7 +2959,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, b;
@@ -2993,7 +2993,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a, b;
@@ -3024,7 +3024,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a;
@@ -3049,7 +3049,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a;
@@ -3074,7 +3074,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a;
@@ -3102,7 +3102,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a, b;
@@ -3134,7 +3134,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a, b;
@@ -3167,7 +3167,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a, b;
@@ -3199,7 +3199,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 input = vec2( -10, 20 );
@@ -3232,7 +3232,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 input = vec3( -10, 20, -30 );
@@ -3265,7 +3265,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 input = vec4( -10, 20, -30, 40 );
@@ -3303,7 +3303,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 a = vec2( 0.0f );
@@ -3330,7 +3330,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a = vec3( 0.0f );
@@ -3357,7 +3357,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 a = vec4( 0.0f );
@@ -3384,7 +3384,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 a = mat4( 0.0f );
@@ -3410,7 +3410,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat a = quatFromEuler( DEG2RAD(30.0f), DEG2RAD(3.0f), DEG2RAD(20.0f) );
@@ -3515,7 +3515,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 a = vec3( 1, 0, 0 );
@@ -3557,7 +3557,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// // point inside the triangle
@@ -3622,7 +3622,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 dataA = vec3(0,0,0);
@@ -3678,7 +3678,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 p0,p1,p2,p3;
@@ -3729,7 +3729,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2 p0,p1,p2,p3;
@@ -3761,7 +3761,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transform = eulerRotate( DEG2RAD(20.0f),0,0 ) * translate(10,0,0);
@@ -3845,7 +3845,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transform = eulerRotate( DEG2RAD(20.0f),0,0 ) * translate(10,0,0);
@@ -3872,7 +3872,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transform = eulerRotate( DEG2RAD(20.0f),0,0 ) * translate(10,0,0);
@@ -3899,7 +3899,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transform = eulerRotate( DEG2RAD(20.0f),0,0 ) * translate(10,0,0);
@@ -3926,7 +3926,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transform = eulerRotate( DEG2RAD(20.0f),0,0 ) * translate(10,0,0);
@@ -3952,7 +3952,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transform = eulerRotate( DEG2RAD(20.0f),0,0 ) * translate(10,0,0);
@@ -4165,7 +4165,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 transform = eulerRotate( DEG2RAD(20.0f),0,0 ) * translate(10,0,0);
@@ -4775,7 +4775,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 translate_matrix = translate(10,0,0);
@@ -4809,7 +4809,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 translate_vec;
@@ -4847,7 +4847,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 translate_vec;
@@ -4906,7 +4906,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 scale_matrix = scale( 2, 2, 2 );
@@ -4945,7 +4945,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 scale_vec;
@@ -4994,7 +4994,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec4 scale_vec;
@@ -5043,7 +5043,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 rotation_matrix = xRotate( DEG2RAD( 30.0f ) );
@@ -5072,7 +5072,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 rotation_matrix = yRotate( DEG2RAD( 30.0f ) );
@@ -5101,7 +5101,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 rotation_matrix = zRotate( DEG2RAD( 30.0f ) );
@@ -5130,7 +5130,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 rotation_matrix = eulerRotate( DEG2RAD( 30.0f ), DEG2RAD( 10.0f ), DEG2RAD( 5.0f ) );
@@ -5162,7 +5162,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float roll, pitch, yaw;
@@ -5196,7 +5196,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float roll, pitch, yaw;
@@ -5255,7 +5255,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 rotation_matrix = rotate( DEG2RAD( 30.0f ), 1.0f, 0.0f, 0.0f );
@@ -5317,7 +5317,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 axis = vec3( 1.0f, 0.0f, 0.0f );
@@ -5349,7 +5349,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float FovY = 60.0f;
@@ -5404,7 +5404,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float FovY = 60.0f;
@@ -5449,7 +5449,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float focalLength = 35.0f;
@@ -5487,7 +5487,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float Left = -1.0f, Right = 1.0f;
@@ -5524,7 +5524,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float Left = -screenWidth/2.0f, Right = screenWidth/2.0f;
@@ -5555,7 +5555,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float Left = -screenWidth/2.0f, Right = screenWidth/2.0f;
@@ -5655,7 +5655,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 objPos;
@@ -5694,7 +5694,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 otherObjPos;
@@ -5732,7 +5732,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 otherObjPos;
@@ -5810,7 +5810,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 otherObjPos;
@@ -5887,7 +5887,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// // screen center at near plane (OpenGL)
@@ -5949,7 +5949,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// // a point from 3D world
@@ -6008,7 +6008,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 axis = normalize( vec3( 1.0f, 1.0f, 0.0f ) );
@@ -6059,7 +6059,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec3 axis = normalize( vec3( 1.0f, 1.0f, 0.0f ) );
@@ -6109,7 +6109,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat result = quatFromEuler( DEG2RAD( 30.0f ), DEG2RAD( 15.0f ), DEG2RAD( 90.0f ) );
@@ -6216,7 +6216,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation = quatFromEuler( DEG2RAD( 30.0f ), DEG2RAD( 15.0f ), DEG2RAD( 90.0f ) );
@@ -6456,7 +6456,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation = quatFromEuler( DEG2RAD( 30.0f ), DEG2RAD( 15.0f ), DEG2RAD( 90.0f ) );
@@ -6509,7 +6509,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation = quatFromEuler( DEG2RAD( 30.0f ), DEG2RAD( 15.0f ), DEG2RAD( 90.0f ) );
@@ -6535,7 +6535,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation = quatFromEuler( DEG2RAD( 30.0f ), DEG2RAD( 15.0f ), DEG2RAD( 90.0f ) );
@@ -6564,7 +6564,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// PlatformTime timer;
@@ -6604,7 +6604,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// PlatformTime timer;
@@ -6644,7 +6644,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// PlatformTime timer;
@@ -6686,7 +6686,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// PlatformTime timer;
@@ -6758,7 +6758,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// PlatformTime timer;

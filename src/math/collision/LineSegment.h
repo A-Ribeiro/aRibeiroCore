@@ -29,7 +29,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -45,7 +45,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -67,7 +67,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -92,7 +92,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -117,7 +117,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -143,7 +143,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -167,7 +167,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -193,7 +193,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -218,7 +218,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -247,7 +247,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -275,7 +275,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -301,7 +301,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -325,7 +325,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -362,7 +362,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -397,7 +397,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///
@@ -429,7 +429,7 @@ namespace collision {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         /// using namespace aRibeiro::collision;
         ///

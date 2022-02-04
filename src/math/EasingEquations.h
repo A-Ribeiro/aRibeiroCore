@@ -72,7 +72,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 interpolationFunctionA(const vec3& a, const vec3& b, float lerp){
@@ -112,7 +112,7 @@ namespace aRibeiro {
 /// Example:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// template <class T>
@@ -150,7 +150,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeNone<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -173,7 +173,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInQuad<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -196,7 +196,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutQuad<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -222,7 +222,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutQuad<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -241,7 +241,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInQuad<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -260,7 +260,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInCubic<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -283,7 +283,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutCubic<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -307,7 +307,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutCubic<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -326,7 +326,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInCubic<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -345,7 +345,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInQuart<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -368,7 +368,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutQuart<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -392,7 +392,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutQuart<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -411,7 +411,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInQuart<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -430,7 +430,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInQuint<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -453,7 +453,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutQuint<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -477,7 +477,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutQuint<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -496,7 +496,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInQuint<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -515,7 +515,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInSine<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -538,7 +538,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutSine<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -561,7 +561,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutSine<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -580,7 +580,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInSine<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -599,7 +599,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInExpo<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -624,7 +624,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutExpo<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -649,7 +649,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutExpo<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -668,7 +668,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInExpo<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -687,7 +687,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInCirc<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -710,7 +710,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutCirc<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -734,7 +734,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutCirc<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -753,7 +753,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInCirc<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -772,7 +772,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInElastic<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -798,7 +798,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutElastic<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -825,7 +825,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutElastic<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -844,7 +844,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInElastic<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -863,7 +863,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInBack<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -887,7 +887,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutBack<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -912,7 +912,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutBack<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -931,7 +931,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInBack<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -950,7 +950,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInBounce<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -986,7 +986,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutBounce<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -1021,7 +1021,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeInOutBounce<vec3>(vec3(0.0f),vec3(1.0f),0.5f);
@@ -1040,7 +1040,7 @@ inline T __name__ (const T& _startValue, const T& _endValue, float lerp ) { \
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// vec3 result = easeOutInBounce<vec3>(vec3(0.0f),vec3(1.0f),0.5f);

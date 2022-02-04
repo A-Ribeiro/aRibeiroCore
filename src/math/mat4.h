@@ -23,7 +23,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// mat4 a, b, result;
@@ -101,7 +101,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix = mat4();
@@ -126,7 +126,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix = mat4( 10.0f );
@@ -170,7 +170,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix = mat4( 1.0f, 0.0f, 0.0f, 0.0f,
@@ -211,7 +211,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix_src = mat4( 1.0f, 0.0f, 0.0f, 0.0f,
@@ -283,7 +283,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix, other_matrix;
@@ -493,7 +493,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix;
@@ -519,7 +519,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix;
@@ -545,7 +545,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// void process_matrix( const mat4 &matrix ) {
@@ -567,7 +567,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix_a, matrix_b;
@@ -695,7 +695,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix_a, matrix_b;
@@ -719,7 +719,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix, matrix_b;
@@ -760,7 +760,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix, matrix_b;
@@ -803,7 +803,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix;
@@ -853,7 +853,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix, matrix_b;
@@ -892,7 +892,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix;
@@ -935,7 +935,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix;
@@ -978,7 +978,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix;
@@ -1021,7 +1021,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// mat4 matrix;

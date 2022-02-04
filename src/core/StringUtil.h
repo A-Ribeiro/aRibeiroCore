@@ -42,7 +42,7 @@ namespace aRibeiro {
         /// It is possible to use it to generate a string that will be rendered as font glyphs.
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// float fps;
@@ -63,7 +63,7 @@ namespace aRibeiro {
         /// It is possible to use it to generate a string that will be rendered as font glyphs.
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// float fps;
@@ -82,7 +82,7 @@ namespace aRibeiro {
         /// \brief Convert any char string to wchar_t string
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// std::string input;
@@ -100,7 +100,7 @@ namespace aRibeiro {
         /// \brief test if a string starts with another string
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// std::string input;
@@ -120,7 +120,7 @@ namespace aRibeiro {
         /// \brief test if a string ends with another string
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// std::string input;

@@ -21,7 +21,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2* vec2_instance = new vec2();
@@ -55,7 +55,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// vec2* vec2_instance = new vec2[64];

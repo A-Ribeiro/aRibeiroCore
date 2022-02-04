@@ -349,7 +349,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// // result = 1.0f
@@ -382,7 +382,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float result;
@@ -417,7 +417,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float result;
@@ -446,7 +446,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float result;
@@ -473,7 +473,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float result;
@@ -502,7 +502,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float result;
@@ -536,7 +536,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float result;
@@ -570,7 +570,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// float result;
@@ -599,7 +599,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// PlatformTime timer;
@@ -669,7 +669,7 @@ namespace aRibeiro {
 /// Example:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// class vec2{

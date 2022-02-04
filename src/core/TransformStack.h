@@ -12,7 +12,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// TransformStack<mat4> model;
@@ -57,7 +57,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// TransformStack<mat4> model;
@@ -94,7 +94,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// TransformStack<mat4> model;
@@ -120,7 +120,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// TransformStack<mat4> model;
@@ -153,7 +153,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// TransformStack<mat4> model;
@@ -175,7 +175,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// TransformStack<mat4> model;

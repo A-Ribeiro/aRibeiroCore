@@ -72,7 +72,7 @@ namespace aRibeiro {
         /// Example of use with functions:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// void callbackFunction() {
@@ -87,7 +87,7 @@ namespace aRibeiro {
         /// Example of use with method:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// class ExampleClass {
@@ -113,7 +113,7 @@ namespace aRibeiro {
         /// Example of use with functions:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// void callbackFunction() {
@@ -128,7 +128,7 @@ namespace aRibeiro {
         /// Example of use with method:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// class ExampleClass {
@@ -156,7 +156,7 @@ namespace aRibeiro {
         /// Example:
         ///
         /// \code
-        /// #include <aRibeiroCore/aribeiro.h>
+        /// #include <aRibeiroCore/aRibeiroCore.h>
         /// using namespace aRibeiro;
         ///
         /// PressReleaseDetector right;

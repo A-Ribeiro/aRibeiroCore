@@ -54,7 +54,7 @@ class _SSE2_ALIGN_PRE quat{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation = quat();
@@ -80,7 +80,7 @@ class _SSE2_ALIGN_PRE quat{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation = quat( 0.0f, 0.0f, 0.0f, 1.0f );
@@ -111,7 +111,7 @@ class _SSE2_ALIGN_PRE quat{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation_source;
@@ -138,7 +138,7 @@ class _SSE2_ALIGN_PRE quat{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation_a, rotation_b;
@@ -233,7 +233,7 @@ class _SSE2_ALIGN_PRE quat{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation;
@@ -263,7 +263,7 @@ class _SSE2_ALIGN_PRE quat{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation_a, rotation_b;
@@ -286,7 +286,7 @@ class _SSE2_ALIGN_PRE quat{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// quat rotation;
@@ -309,7 +309,7 @@ class _SSE2_ALIGN_PRE quat{
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// void processQuaternion ( const quat &rotation ) {

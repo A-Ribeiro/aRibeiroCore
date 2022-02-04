@@ -2,7 +2,7 @@
 #define Virtual_Property__H
 
 #include <aRibeiroCore/common.h>
-//#include <aRibeiroCore/aribeiro.h>
+//#include <aRibeiroCore/aRibeiroCore.h>
 
 /*
  property declaration:
@@ -40,7 +40,7 @@ namespace aRibeiro {
     /// Example:
     ///
     /// \code
-    /// #include <aRibeiroCore/aribeiro.h>
+    /// #include <aRibeiroCore/aRibeiroCore.h>
     /// using namespace aRibeiro;
     ///
     /// class Example {

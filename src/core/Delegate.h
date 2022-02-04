@@ -5,7 +5,7 @@
 #include <aRibeiroCore/buildFlags.h>
 
 //#include "Object.h"
-//#include <aRibeiroCore/aribeiro.h>
+//#include <aRibeiroCore/aRibeiroCore.h>
 //#include <aRibeiroCore/common.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -43,7 +43,7 @@ namespace aRibeiro {
 /// How to use them:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// // Define a class to hold the delegation information

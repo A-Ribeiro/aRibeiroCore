@@ -53,7 +53,7 @@ namespace aRibeiro {
 /// Example returning int:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// DefineMethodPointer(MethodSumPtr, int, int a, int b) ReturnMethodCall(a, b)
@@ -89,7 +89,7 @@ namespace aRibeiro {
 /// Example returning void:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// DefineMethodPointer(MethodSumPtr, void, int a, int b) VoidMethodCall(a, b)
@@ -167,7 +167,7 @@ namespace aRibeiro {
 /// Example returning int:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// DefineMethodPointer(MethodSumPtr, int, int a, int b) ReturnMethodCall(a, b)
@@ -219,7 +219,7 @@ namespace aRibeiro {
 /// Example returning void:
 ///
 /// \code
-/// #include <aRibeiroCore/aribeiro.h>
+/// #include <aRibeiroCore/aRibeiroCore.h>
 /// using namespace aRibeiro;
 ///
 /// DefineMethodPointer(MethodSumPtr, void, int a, int b) VoidMethodCall(a, b)
