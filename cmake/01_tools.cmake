@@ -40,8 +40,9 @@ macro(configure_build_flags projectname inputfile outputfile)
     # get build flags
     get_directory_property(aux COMPILE_DEFINITIONS)
     foreach(define ${aux})
-        set(cmake_build_flags 
-            "${cmake_build_flags}#ifndef ${define}\n    #define ${define}\n#endif\n")
+        if(NOT "${define}" STREQUAL "NDEBUG")
+            set(cmake_build_flags "${cmake_build_flags}#ifndef ${define}\n    #define ${define}\n#endif\n")
+        endif()
     endforeach()
 
     configure_file(
