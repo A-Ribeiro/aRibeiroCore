@@ -1,3 +1,9 @@
+# "For this is how God loved the world:
+# he gave his only Son, so that everyone
+# who believes in him may not perish
+# but may have eternal life."
+#
+# John 3:16
 
 find_path(ARIBEIROCORE_INCLUDE_DIR aRibeiroCore/aRibeiroCore.h)
 find_library(ARIBEIROCORE_LIBRARIES NAMES aRibeiroCore)
