@@ -3,18 +3,17 @@
 #ifndef asilva_defs_h
 #define asilva_defs_h
 
+// "For this is how God loved the world:
+// he gave his only Son, so that everyone
+// who believes in him may not perish
+// but may have eternal life."
+//
+// John 3:16
+
 ///\mainpage
-/// **OpenGL Starter**
+/// **aRibeiroCore**
 ///
-/// C++ game, math and multimedia framework.<br />
-/// It is written to work with OpenGL,<br />
-/// but has several other implementations as<br />
-/// SIMD vector math, threads, timers, video, etc...
-///
-/// Compatible with MacOS X, Linux, Windows and<br />
-/// Rasberry Pi (Raspbian) .
-///
-/// <a href="https://github.com/A-Ribeiro/OpenGLStarter" target=�_blank� >github.com/A-Ribeiro/OpenGLStarter</a>
+/// Math/General Utils lib.
 ///
 
 #include <aRibeiroCore/buildFlags.h>

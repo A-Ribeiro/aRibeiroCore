@@ -58,6 +58,7 @@ if( NOT MSVC )
             ${PUBLIC_HEADERS} 
             "${CMAKE_HOME_DIRECTORY}/include/${PROJECT_NAME}/${PROJECT_NAME}.h"
             "${CMAKE_HOME_DIRECTORY}/include/${PROJECT_NAME}/buildFlags.h" 
+            "LICENSE"
         DESTINATION include/${PROJECT_NAME}
     )
 endif()
