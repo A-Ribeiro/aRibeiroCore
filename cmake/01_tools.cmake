@@ -186,6 +186,7 @@ else()
         execute_process(
             COMMAND unzip -n "${ZIPFILE}" -d "${OUTDIR}"
             OUTPUT_VARIABLE result
+            COMMAND_ERROR_IS_FATAL ANY
         )
     endmacro()
 
@@ -211,5 +212,30 @@ macro(tool_download_lib_package REPOSITORY_URL LIBNAME)
 endmacro()
 
 macro(tool_include_lib LIBNAME)
-    add_subdirectory("${CMAKE_HOME_DIRECTORY}/libs/${LIBNAME}")
+    #add_subdirectory("${CMAKE_HOME_DIRECTORY}/libs/${LIBNAME}" "${CMAKE_BINARY_DIR}/bin/${LIBNAME}")
+    #add_subdirectory("${CMAKE_HOME_DIRECTORY}/libs/${LIBNAME}" "${CMAKE_CURRENT_BINARY_DIR}/${LIBNAME}")
+    add_subdirectory("${CMAKE_HOME_DIRECTORY}/libs/${LIBNAME}" "${CMAKE_BINARY_DIR}/${LIBNAME}")
+endmacro()
+
+
+macro(tool_download_git_package REPOSITORY_URL LIBNAME)
+    if(NOT EXISTS "${CMAKE_HOME_DIRECTORY}/libs/${LIBNAME}/")
+        file(MAKE_DIRECTORY "${CMAKE_HOME_DIRECTORY}/libs")
+        message(STATUS "[${LIBNAME}] cloning...")
+
+        find_package(Git REQUIRED)
+
+        execute_process(
+            COMMAND "${GIT_EXECUTABLE}" clone "${REPOSITORY_URL}" "${CMAKE_HOME_DIRECTORY}/libs/${LIBNAME}/"
+            OUTPUT_VARIABLE result
+            #COMMAND_ERROR_IS_FATAL ANY
+        )
+
+        if(NOT EXISTS "${CMAKE_HOME_DIRECTORY}/libs/${LIBNAME}/")
+            message(FATAL_ERROR "Error to clone repository: ${REPOSITORY_URL}")
+        endif()
+
+        message(STATUS "[${LIBNAME}] done")
+
+    endif()
 endmacro()
