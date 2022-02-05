@@ -5,6 +5,10 @@ but may have eternal life.
   \
 John 3:16
 
+## GitHUB Link
+
+https://github.com/A-Ribeiro/aRibeiroCore
+
 ## aRibeiroCore
 
 * Build
@@ -29,15 +33,3 @@ John 3:16
 * aRibeiroData
     * [Binary Streams](lib/aribeiro/feature-binary-stream)
     * [Read/Write Image](lib/aribeiro/feature-read-write-image)
-
-## Authors
-
-***Alessandro Ribeiro da Silva*** obtained his Bachelor's degree in Computer Science from Pontifical Catholic 
-University of Minas Gerais and a Master's degree in Computer Science from the Federal University of Minas Gerais, 
-in 2005 and 2008 respectively. He taught at PUC and UFMG as a substitute/assistant professor in the courses 
-of Digital Arts, Computer Science, Computer Engineering and Digital Games. He have work experience with interactive
-software. He worked with OpenGL, post-processing, out-of-core rendering, Unity3D and game consoles. Today 
-he work with freelance projects related to Computer Graphics, Virtual Reality, Augmented Reality, WebGL, web server 
-and mobile apps (andoid/iOS).
-
-More information on: https://alessandroribeiro.thegeneralsolution.com/
