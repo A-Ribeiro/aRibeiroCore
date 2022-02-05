@@ -12,7 +12,7 @@ https://github.com/A-Ribeiro/aRibeiroCore
 ## aRibeiroCore
 
 * Build
-    * [How to Build](how-to-build)
+    * [How to Build](how-to-build.md)
 * aRibeiroCore
     * [Color Conversion](lib/aribeiro/feature-color-conversion)
     * [Easing Equations](lib/aribeiro/feature-easing-eq)
