@@ -17,7 +17,7 @@ For example: The math and basic utilities I called aRibeiroCore; The platform re
 
 I have a WIP documentation at the [docs](docs/index.md) folder.
 
-I hope this code could help/aid someone.
+I hope this code could help/aid the development of great projects.
 
 ## Authors
 
