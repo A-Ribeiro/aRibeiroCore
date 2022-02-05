@@ -13,7 +13,7 @@ It can be used to implement events related to value modification.
 See the example below:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 // first you need to declare the property
@@ -43,7 +43,7 @@ You need to implement the getter and setter to use a __VirtualProperty__.
 Example:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 class Example {

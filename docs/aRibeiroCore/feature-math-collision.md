@@ -12,7 +12,7 @@ Stores 3D points to represent an Axis Aligned Bounding Box.
 
 #### Constructor
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -25,7 +25,7 @@ aabb = AABB(corner_d, corner_a);
 ```
 #### pointInsideAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -38,7 +38,7 @@ if ( AABB::pointInsideAABB( point, aabb ) ){
 ```
 #### aabbOverlapsAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -51,7 +51,7 @@ if ( AABB::aabbOverlapsAABB( aabb_a, aabb_b ) ){
 ```
 #### joinAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -62,7 +62,7 @@ AABB aabb = AABB::joinAABB( aabb_a, aabb_b );
 ```
 #### fromTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -79,7 +79,7 @@ using namespace aRibeiro::collision;
 ```
 #### fromSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -97,7 +97,7 @@ using namespace aRibeiro::collision;
 ```
 #### fromLineSegment
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -114,7 +114,7 @@ using namespace aRibeiro::collision;
 ```
 #### fromFrustum
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -123,7 +123,7 @@ AABB aabb = AABB::fromFrustum( frustum );
 ```
 #### raycastAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -139,7 +139,7 @@ if ( AABB::raycastAABB(ray, aabb, &tmin, &normal) ) {
 ```
 #### segmentIntersectsAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -162,7 +162,7 @@ using namespace aRibeiro::collision;
 ```
 #### closestPointToAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -173,7 +173,7 @@ vec3 closest_point = AABB::closestPointToAABB( ptn_to_input, aabb );
 ```
 #### sphereOverlapsAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -201,7 +201,7 @@ using namespace aRibeiro::collision;
 ```
 #### planeIntersectsAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -214,7 +214,7 @@ if ( AABB::planeIntersectsAABB( plane, aabb ) ) {
 ```
 #### triangleIntersectsAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -239,7 +239,7 @@ using namespace aRibeiro::collision;
 ```
 #### frustumOverlapsAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -257,7 +257,7 @@ Camera frustum representation.
 
 #### Constructor
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -278,7 +278,7 @@ using namespace aRibeiro::collision;
 ```
 #### Plane Indexing
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -293,7 +293,7 @@ Plane far = frustum[5];
 ```
 #### pointInsideFrustum
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -306,7 +306,7 @@ if ( Frustum::pointInsideFrustum( point, frustum ) ) {
 ```
 #### sphereOverlapsFrustum
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -333,7 +333,7 @@ using namespace aRibeiro::collision;
 ```
 #### aabbOverlapsFrustum
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -351,7 +351,7 @@ Line segment representation.
 
 #### Constructor
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -367,7 +367,7 @@ using namespace aRibeiro::collision;
 ```
 #### closestPointToSegment
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -386,7 +386,7 @@ using namespace aRibeiro::collision;
 ```
 #### aabbIntersectsSegment
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -411,7 +411,7 @@ using namespace aRibeiro::collision;
 ```
 #### planeIntersectsSegment
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -436,7 +436,7 @@ using namespace aRibeiro::collision;
 ```
 #### sphereIntersectsSegment
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -483,7 +483,7 @@ using namespace aRibeiro::collision;
 ```
 #### triangleIntersectsSegment
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -541,7 +541,7 @@ using namespace aRibeiro::collision;
 
 #### Constructor
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -566,7 +566,7 @@ using namespace aRibeiro::collision;
 ```
 #### normalize
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -576,7 +576,7 @@ plane.normalize();
 ```
 #### fromTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -593,7 +593,7 @@ using namespace aRibeiro::collision;
 ```
 #### closestPointToPlane
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -604,7 +604,7 @@ vec3 closest_point = Plane::closestPointToPlane( ptn_to_input, plane );
 ```
 #### pointDistanceToPlane
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -615,7 +615,7 @@ float signed_distance = Plane::pointDistanceToPlane( point, plane );
 ```
 #### raycastPlane
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -631,7 +631,7 @@ if ( Plane::raycastPlane(ray, aabb, &tmin, &normal) ) {
 ```
 #### segmentIntersectsPlane
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -656,7 +656,7 @@ using namespace aRibeiro::collision;
 ```
 #### intersectPlaneToPlane
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -669,7 +669,7 @@ if ( Plane::intersectPlaneToPlane( plane_a, plane_b, &line_position, &line_direc
 ```
 #### intersectPlanes
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -682,7 +682,7 @@ if ( Plane::intersectPlanes( plane_a, plane_b, plane_c, &position ) ) {
 ```
 #### aabbIntersectsPlane
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -700,7 +700,7 @@ Ray representation.
 
 #### Constructor
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -717,7 +717,7 @@ using namespace aRibeiro::collision;
 ```
 #### raycastAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -733,7 +733,7 @@ if ( Ray::raycastAABB(ray, aabb, &tmin, &normal) ) {
 ```
 #### raycastPlane
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -749,7 +749,7 @@ if ( Ray::raycastPlane(ray, aabb, &tmin, &normal) ) {
 ```
 #### raycastSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -782,7 +782,7 @@ using namespace aRibeiro::collision;
 ```
 #### raycastTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -819,7 +819,7 @@ Sphere representation.
 
 #### Constructor
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -837,7 +837,7 @@ using namespace aRibeiro::collision;
 ```
 #### closestPointToSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -860,7 +860,7 @@ using namespace aRibeiro::collision;
 ```
 #### sphereOverlapsSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -873,7 +873,7 @@ if ( Sphere::sphereOverlapsSphere( sphere_a, sphere_b ) ){
 ```
 #### joinSpheres
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -884,7 +884,7 @@ Sphere sphere = Sphere::joinSpheres( sphere_a, sphere_b );
 ```
 #### raycastSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -917,7 +917,7 @@ using namespace aRibeiro::collision;
 ```
 #### segmentIntersectsSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -966,7 +966,7 @@ using namespace aRibeiro::collision;
 ```
 #### pointInsideSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -993,7 +993,7 @@ using namespace aRibeiro::collision;
 ```
 #### aabbOverlapsSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1021,7 +1021,7 @@ using namespace aRibeiro::collision;
 ```
 #### frustumOverlapsSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1048,7 +1048,7 @@ using namespace aRibeiro::collision;
 ```
 #### triangleIntersectsSphere
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1101,7 +1101,7 @@ using namespace aRibeiro::collision;
 ```
 #### from4Points
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1110,7 +1110,7 @@ Sphere sphere = Sphere::from4Points( tetrahedron_a,tetrahedron_b,tetrahedron_c,t
 ```
 #### fromFrustum
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1119,7 +1119,7 @@ Sphere sphere = Sphere::fromFrustum( frustum );
 ```
 #### fromAABB
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1128,7 +1128,7 @@ Sphere sphere = Sphere::fromAABB( aabb );
 ```
 #### fromLineSegment
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1137,7 +1137,7 @@ Sphere sphere = Sphere::fromLineSegment( lineSegment );
 ```
 #### fromTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1151,7 +1151,7 @@ Triangle representation.
 
 #### Constructor
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1167,7 +1167,7 @@ using namespace aRibeiro::collision;
 ```
 #### raycastTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1199,7 +1199,7 @@ using namespace aRibeiro::collision;
 ```
 #### closestPointToTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1221,7 +1221,7 @@ using namespace aRibeiro::collision;
 ```
 #### segmentIntersectsTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1276,7 +1276,7 @@ using namespace aRibeiro::collision;
 ```
 #### sphereIntersectsTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 
@@ -1329,7 +1329,7 @@ using namespace aRibeiro::collision;
 ```
 #### aabbIntersectsTriangle
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 using namespace aRibeiro::collision;
 

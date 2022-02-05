@@ -25,7 +25,7 @@ This macro implements all arithmetic operations: +, -, *, / related to a single 
 Example:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 // I'll use the vec2 definition as example

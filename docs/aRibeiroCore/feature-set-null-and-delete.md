@@ -11,7 +11,7 @@ This implementation sets the parameter variable to __NULL__ and call delete afte
 Example:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 //

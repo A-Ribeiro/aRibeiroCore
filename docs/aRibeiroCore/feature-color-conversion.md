@@ -24,7 +24,7 @@ You need to check the input and output range to use the convertion methods/funct
 ## Examples
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 //

@@ -17,7 +17,7 @@ The class have three variables that are updated according the signal state updat
 Example:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 PressReleaseDetector right;

@@ -35,4 +35,4 @@ Look at the example below:
 
 The project __aribeiro-text-easing-eq__ render all equations. You can see the print screen below:
 
-![Robert Penner's equations](../../images/robert-penner-easing-eq.png)
+![Robert Penner's equations](../images/robert-penner-easing-eq.png)

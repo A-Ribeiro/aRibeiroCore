@@ -11,7 +11,7 @@ It also contains static methods that implements common string operations.
 String construction example:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 //input variable
@@ -39,7 +39,7 @@ Static methods listing:
 Example:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 {

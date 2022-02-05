@@ -7,7 +7,7 @@
 To generate random numbers with all types from the framework.
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 //

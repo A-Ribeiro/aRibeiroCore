@@ -13,7 +13,7 @@ It can be used to implement __events__.
 See the example below:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 // first you need to declare the delegate type
@@ -62,7 +62,7 @@ In this case you can use the method/function pointer.
 See the example below:
 
 ```cpp
-#include <aribeiro/aribeiro.h>
+#include <aRibeiroCore/aRibeiroCore.h>
 using namespace aRibeiro;
 
 //define the method pointer type MethodSumPtr_returnInt with a return
