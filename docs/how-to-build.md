@@ -1,6 +1,6 @@
 # OpenGLStarter
 
-[Back to HOME](index)
+[Back to HOME](index.md)
 
 ## How To Build
 
