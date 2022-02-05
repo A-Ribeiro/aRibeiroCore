@@ -15,7 +15,7 @@ I splitted the code according its area.
 
 For example: The math and basic utilities I called aRibeiroCore; The platform related code (thread, sleep, timer, etc...) I called aRibeiroPlatform, etc...
 
-I have a WIP documentation at the [docs](docs/index.md) folder.
+I have a WIP documentation at the [docs](docs/index) folder.
 
 I hope this code could help/aid the development of great projects.
 
