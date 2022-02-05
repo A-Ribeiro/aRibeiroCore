@@ -38,8 +38,10 @@ configure_build_flags( ${PROJECT_NAME} "src/buildFlags.h.in" "buildFlags.h")
 tool_get_directory_definitions(compile_defs)
 get_directory_property(compile_opts COMPILE_OPTIONS)
 
-add_library( ${PROJECT_NAME} STATIC ${PUBLIC_HEADERS} ${SRC} )
-target_link_libraries(${PROJECT_NAME} PUBLIC librandom)
+#force to include objects of librandom inside the aRibeiroCore
+#   Better for raw aRibeicoCore.a file distribution
+add_library( ${PROJECT_NAME} STATIC ${PUBLIC_HEADERS} ${SRC} $<TARGET_OBJECTS:librandom> )
+#target_link_libraries(${PROJECT_NAME} PUBLIC librandom)
 
 # set the target's folder (for IDEs that support it, e.g. Visual Studio)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "aRibeiro")
@@ -48,9 +50,13 @@ target_compile_definitions(${PROJECT_NAME} PUBLIC ${compile_defs})
 target_compile_options(${PROJECT_NAME} PUBLIC ${compile_opts})
 
 if( NOT MSVC )
+    
+    #add_library(aRibeiroCore_static STATIC $<TARGET_OBJECTS:aRibeiroCore> $<TARGET_OBJECTS:librandom>)
+    #set_target_properties(aRibeiroCore_combined PROPERTIES OUTPUT_NAME "aRibeiroCore")
+
     # Install setup
     install(
-        TARGETS ${PROJECT_NAME} 
+        TARGETS ${PROJECT_NAME}
         ARCHIVE DESTINATION lib
     )
     install(
