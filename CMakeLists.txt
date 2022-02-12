@@ -70,6 +70,7 @@ if( NOT MSVC )
 endif()
 
 if (NOT supress_show_info)
+    message(STATUS "${PROJECT_NAME}")
     list_to_string("${compile_defs}" compile_defs_str)
     message(STATUS "Compile Definitions: ${compile_defs_str}")
     list_to_string("${compile_opts}" compile_opts_str)
