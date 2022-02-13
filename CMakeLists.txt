@@ -49,7 +49,9 @@ set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "aRibeiro")
 target_compile_definitions(${PROJECT_NAME} PUBLIC ${compile_defs})
 target_compile_options(${PROJECT_NAME} PUBLIC ${compile_opts})
 
-if( NOT MSVC )
+option(ARIBEIRO_SKIP_INSTALL_CORE OFF)
+
+if( NOT MSVC AND NOT ARIBEIRO_SKIP_INSTALL_CORE )
     
     #add_library(aRibeiroCore_static STATIC $<TARGET_OBJECTS:aRibeiroCore> $<TARGET_OBJECTS:librandom>)
     #set_target_properties(aRibeiroCore_combined PROPERTIES OUTPUT_NAME "aRibeiroCore")
