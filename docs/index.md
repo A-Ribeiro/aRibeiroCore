@@ -25,8 +25,6 @@ https://github.com/A-Ribeiro/font2bitmap
 
 ## aRibeiroCore
 
-* Build
-    * [How to Build](how-to-build.md)
 * aRibeiroCore
     * [Color Conversion](aRibeiroCore/feature-color-conversion.md)
     * [Easing Equations](aRibeiroCore/feature-easing-eq.md)
