@@ -141,7 +141,7 @@ namespace aRibeiro {
     DefineMethodPointer(aribeiro_OnDataMethodPtrType, void, const uint8_t *data, size_t s) VoidMethodCall(data,s)
 
 
-
+    ARIBEIRO_INLINE
     static void* malloc_aligned(size_t size, size_t N = 32) {
         size_t complete_16bytes = (N - size % N) % N;
     #if defined(ARIBEIRO_SSE2)
@@ -163,13 +163,24 @@ namespace aRibeiro {
     }
     */
 
-
+    ARIBEIRO_INLINE
     static void free_aligned(void* buffer) {
     #if defined(ARIBEIRO_SSE2)
         _mm_free(buffer);
     #else
         free(buffer);
     #endif
+    }
+
+
+    ARIBEIRO_INLINE
+    static int array_index_of(const uint8_t* input, int start_input, int input_size, const uint8_t* pattern, int pattern_size) {
+        int test_limit = input_size - pattern_size;
+        for (int i = start_input; i <= test_limit; i++) {
+            if (memcmp(&input[i], pattern, pattern_size) == 0)
+                return i;
+        }
+        return input_size;
     }
 }
 

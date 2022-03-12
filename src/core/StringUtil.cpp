@@ -87,4 +87,38 @@ namespace aRibeiro {
         return strstr(str.c_str(),v.c_str()) != 0;
     }
 
+
+    std::vector<std::string> StringUtil::tokenizer(const std::string& input, const std::string &delimiter) {
+
+        int start = 0;
+
+        const uint8_t* input_str = (const uint8_t*)input.c_str();
+        int input_size = input.length();
+        const uint8_t* delimiter_str = (const uint8_t*)delimiter.c_str();
+        int delimiter_size = delimiter.length();
+
+        std::vector<std::string> result;
+        std::string result_str;
+        while (start < input_size) {
+            int index_of_delimiter = array_index_of(input_str, start, input_size, delimiter_str, delimiter_size);
+            if (index_of_delimiter == start) {
+                start += delimiter_size;
+                result.push_back("");
+                continue;
+            }
+            int delta = index_of_delimiter - start;
+            result_str.resize(delta);
+            //for (int i = start, count = 0; i < index_of_delimiter; i++, count++)
+            //    result_str[count] = (char)input_str[i];
+            memcpy(&result_str[0], &input_str[start], delta * sizeof(uint8_t));
+            result.push_back(result_str);
+            start = index_of_delimiter + delimiter_size;
+        }
+
+        if (result.size() == 0)
+            result.push_back("");
+
+        return result;
+    }
+
 }

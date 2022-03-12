@@ -142,6 +142,9 @@ namespace aRibeiro {
 
         static bool contains(const std::string str, const std::string v);
 
+
+        static std::vector<std::string> tokenizer(const std::string& input, const std::string &delimiter);
+
     };
 
 }
