@@ -93,9 +93,9 @@ namespace aRibeiro {
         int start = 0;
 
         const uint8_t* input_str = (const uint8_t*)input.c_str();
-        int input_size = input.length();
+        int input_size = (int)input.length();
         const uint8_t* delimiter_str = (const uint8_t*)delimiter.c_str();
-        int delimiter_size = delimiter.length();
+        int delimiter_size = (int)delimiter.length();
 
         std::vector<std::string> result;
         std::string result_str;

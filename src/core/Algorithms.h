@@ -1,0 +1,205 @@
+#ifndef __algorithms__h__
+#define __algorithms__h__
+
+#include <aRibeiroCore/common.h>
+
+namespace aRibeiro {
+
+    namespace PatternMatch {
+
+        int32_t edit_distance(const char* s, const char* t);
+
+    }
+
+    namespace Sorting {
+
+        // for counting sort, 
+        // if you need more than 4.294.967.295 indexes, 
+        // you can change this typedef
+        typedef uint32_t counter_type;
+
+        struct IndexInt32 {
+            int32_t toSort;
+            uint32_t index;
+        };
+
+        struct IndexUInt32 {
+            uint32_t toSort;
+            uint32_t index;
+        };
+
+
+
+
+        // Float radix sort trick from: http://stereopsis.com/radix.html
+        // ================================================================================================
+        // flip a float for sorting
+        //  finds SIGN of fp number.
+        //  if it's 1 (negative float), it flips all bits
+        //  if it's 0 (positive float), it flips the sign only
+        // ================================================================================================
+        ARIBEIRO_INLINE
+        static uint32_t sort_float_to_uint32(const float &_f) {
+            uint32_t f = *(uint32_t*)&_f;
+            uint32_t mask = (-int32_t(f >> 31)) | 0x80000000;
+            return f ^ mask;
+        }
+
+        ARIBEIRO_INLINE
+        static int32_t sort_float_to_int32(const float& _f) {
+            int32_t f = (int32_t)sort_float_to_uint32(_f) + INT32_MIN;
+            return (int32_t)f;
+        }
+
+        // ================================================================================================
+        // flip a float back (invert FloatFlip)
+        //  signed was flipped from above, so:
+        //  if sign is 1 (negative), it flips the sign bit back
+        //  if sign is 0 (positive), it flips all bits back
+        // ================================================================================================
+        ARIBEIRO_INLINE
+        static float sort_uint32_to_float(const uint32_t &f) {
+            uint32_t mask = ((f >> 31) - 1) | 0x80000000;
+            mask = f ^ mask;
+            return *(float*)&mask;
+        }
+        ARIBEIRO_INLINE
+        static float sort_int32_to_float(const int32_t& _f) {
+            uint32_t f = (uint32_t)(_f - INT32_MIN);
+            return sort_uint32_to_float(f);
+        }
+
+        /// \brief Radix sort using Counting sort inside it for 'int32_t' type
+        ///
+        /// Radix sort implementation
+        /// _________________________
+        /// 
+        /// The radix sort separates the number by its digit.
+        /// 
+        /// The natural base is 10 (didatic).
+        /// 
+        /// This algorithm uses the 'base_bits' to setup a binary base over the type 'int32_t'.
+        /// 
+        /// This binary base allow us to use the shift and bitwise operators to perform better on CPUs.
+        /// 
+        /// Counting sort implementation
+        /// _________________________
+        /// 
+        /// The counting sort is used to sort the individual digits resulting from the radix.
+        /// 
+        /// This implementation allow the pre-allocation of the temporary buffer outside of the function.
+        /// 
+        /// If the 'tmp_array' is NULL, then the array is allocated and freed according the 'arrSize' parameter.
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        ///
+        void radix_counting_sort_signed(int32_t* _arr, uint32_t arrSize, int32_t* tmp_array = NULL);
+        void radix_counting_sort_signed_index(IndexInt32* _arr, uint32_t arrSize, IndexInt32* tmp_array = NULL);
+
+        /// \brief Radix sort using Counting sort inside it for 'uint32_t' type
+        ///
+        /// Radix sort implementation
+        /// _________________________
+        /// 
+        /// The radix sort separates the number by its digit.
+        /// 
+        /// The natural base is 10 (didatic).
+        /// 
+        /// This algorithm uses the 'base_bits' to setup a binary base over the type 'uint32_t'.
+        /// 
+        /// This binary base allow us to use the shift and bitwise operators to perform better on CPUs.
+        /// 
+        /// Counting sort implementation
+        /// _________________________
+        /// 
+        /// The counting sort is used to sort the individual digits resulting from the radix.
+        /// 
+        /// This implementation allow the pre-allocation of the temporary buffer outside of the function.
+        /// 
+        /// If the 'tmp_array' is NULL, then the array is allocated and freed according the 'arrSize' parameter.
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        ///
+        void radix_counting_sort_unsigned(uint32_t* _arr, uint32_t arrSize, uint32_t* tmp_array = NULL);
+        void radix_counting_sort_unsigned_index(IndexUInt32* _arr, uint32_t arrSize, IndexUInt32* tmp_array = NULL);
+
+        /// \brief Radix sort using Bucket sort inside it for 'int32_t' type
+        ///
+        /// Radix sort implementation
+        /// _________________________
+        /// 
+        /// The radix sort separates the number by its digit.
+        /// 
+        /// The natural base is 10 (didatic).
+        /// 
+        /// This algorithm uses the 'base_bits' to setup a binary base over the type 'int32_t'.
+        /// 
+        /// This binary base allow us to use the shift and bitwise operators to perform better on CPUs.
+        /// 
+        /// Bucket sort implementation
+        /// _________________________
+        /// 
+        /// The bucket sort is used to sort the individual digits resulting from the radix.
+        /// 
+        /// The main drawback of using bucket sort is that it allocates a huge number of individual lists.
+        /// 
+        /// But for some cases, it performs better than the Counting sort implementation.
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        ///
+        void radix_bucket_sort_signed(int32_t* arr, uint32_t arrSize);
+        void radix_bucket_sort_signed_index(IndexInt32* arr, uint32_t arrSize);
+
+
+        /// \brief Radix sort using Bucket sort inside it for 'uint32_t' type
+        ///
+        /// Radix sort implementation
+        /// _________________________
+        /// 
+        /// The radix sort separates the number by its digit.
+        /// 
+        /// The natural base is 10 (didatic).
+        /// 
+        /// This algorithm uses the 'base_bits' to setup a binary base over the type 'uint32_t'.
+        /// 
+        /// This binary base allow us to use the shift and bitwise operators to perform better on CPUs.
+        /// 
+        /// Bucket sort implementation
+        /// _________________________
+        /// 
+        /// The bucket sort is used to sort the individual digits resulting from the radix.
+        /// 
+        /// The main drawback of using bucket sort is that it allocates a huge number of individual lists.
+        /// 
+        /// But for some cases, it performs better than the Counting sort implementation.
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        ///
+        void radix_bucket_sort_unsigned(uint32_t* arr, uint32_t arrSize);
+        void radix_bucket_sort_unsigned_index(IndexUInt32* arr, uint32_t arrSize);
+
+
+    }
+}
+
+#endif
