@@ -21,11 +21,33 @@ namespace aRibeiro {
         struct IndexInt32 {
             int32_t toSort;
             uint32_t index;
+
+            static bool comparator(const IndexInt32 &i1, const IndexInt32 &i2) {
+                return (i1.toSort < i2.toSort);
+            }
+
+            static IndexInt32 Create(int32_t toSort, uint32_t index) {
+                IndexInt32 result;
+                result.toSort = toSort;
+                result.index = index;
+                return result;
+            }
         };
 
         struct IndexUInt32 {
             uint32_t toSort;
             uint32_t index;
+
+            static bool comparator(const IndexUInt32 &i1, const IndexUInt32 &i2) {
+                return (i1.toSort < i2.toSort);
+            }
+
+            static IndexInt32 Create(uint32_t toSort, uint32_t index) {
+                IndexInt32 result;
+                result.toSort = toSort;
+                result.index = index;
+                return result;
+            }
         };
 
 
