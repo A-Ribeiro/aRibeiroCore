@@ -104,7 +104,7 @@ namespace aRibeiro {
         }
         ARIBEIRO_INLINE
         static float sort_int32_to_float(const int32_t& _f) {
-            uint32_t f = (uint32_t)(_f - INT32_MIN);
+            uint32_t f = (uint32_t)((uint32_t)_f - (uint32_t)INT32_MIN);
             return sort_uint32_to_float(f);
         }
 
