@@ -26,7 +26,7 @@ namespace aRibeiro {
                 return (i1.toSort < i2.toSort);
             }
 
-            static IndexInt32 Create(int32_t toSort, uint32_t index) {
+            static IndexInt32 Create(uint32_t index, int32_t toSort) {
                 IndexInt32 result;
                 result.toSort = toSort;
                 result.index = index;
@@ -42,7 +42,7 @@ namespace aRibeiro {
                 return (i1.toSort < i2.toSort);
             }
 
-            static IndexInt32 Create(uint32_t toSort, uint32_t index) {
+            static IndexInt32 Create(uint32_t index, uint32_t toSort) {
                 IndexInt32 result;
                 result.toSort = toSort;
                 result.index = index;
@@ -51,6 +51,23 @@ namespace aRibeiro {
         };
 
 
+        ARIBEIRO_INLINE
+        static uint32_t sort_spread_uint32(uint32_t min, uint32_t max, uint32_t v){
+            v = v - min;
+            uint64_t aux = v;
+            uint64_t delta = max - min;
+            aux = (aux * (uint64_t)UINT32_MAX) / delta;
+            return (uint32_t)aux;
+        }
+
+        ARIBEIRO_INLINE
+        static int32_t sort_spread_int32(int32_t min, int32_t max, int32_t v){
+            uint64_t aux = (uint64_t)v - (uint64_t)min;
+            uint64_t delta = (uint64_t)max - (uint64_t)min;
+            aux = (aux * (uint64_t)UINT32_MAX) / delta;
+            aux += (uint64_t)INT32_MIN;
+            return (int32_t)aux;
+        }
 
 
         // Float radix sort trick from: http://stereopsis.com/radix.html
