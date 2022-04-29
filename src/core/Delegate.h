@@ -103,11 +103,27 @@ namespace aRibeiro {
                     return false; \
             } \
         }; \
+        struct OnRun { \
+            int op_add_remove; \
+            DelegateEntry entry; \
+        }; \
         std::vector<DelegateEntry> mDelegateEntry; \
+        std::vector<OnRun> m_onrun_op; \
+        bool running; \
         typedef std::vector<DelegateEntry>::iterator iteratorType; \
     public: \
+        className(){ \
+            running = false;\
+        } \
         void add(aRibeiro::DelegateFriendObject* objPtr, className##Method methodPtr){ \
             DelegateEntry entry (objPtr,methodPtr); \
+            if (running) { \
+                OnRun run_entry; \
+                run_entry.op_add_remove = 0; \
+                run_entry.entry = entry; \
+                m_onrun_op.push_back(run_entry); \
+                return; \
+            } \
             for (size_t i=0;i<mDelegateEntry.size();i++) \
                 if (mDelegateEntry[i] == entry) \
                     return; \
@@ -122,6 +138,13 @@ namespace aRibeiro {
         } \
         void add(className##Function functionPtr){ \
             DelegateEntry entry (functionPtr); \
+            if (running) { \
+                OnRun run_entry; \
+                run_entry.op_add_remove = 0; \
+                run_entry.entry = entry; \
+                m_onrun_op.push_back(run_entry); \
+                return; \
+            } \
             for (size_t i=0;i<mDelegateEntry.size();i++) \
                 if (mDelegateEntry[i] == entry) \
                     return; \
@@ -129,6 +152,13 @@ namespace aRibeiro {
         } \
         void remove(aRibeiro::DelegateFriendObject* objPtr, className##Method methodPtr){ \
             DelegateEntry entry (objPtr,methodPtr ); \
+            if (running) { \
+                OnRun run_entry; \
+                run_entry.op_add_remove = 1; \
+                run_entry.entry = entry; \
+                m_onrun_op.push_back(run_entry); \
+                return; \
+            } \
             iteratorType it = mDelegateEntry.begin(); \
             for (; it != mDelegateEntry.end(); it++) \
                 if ((*it) == entry){ \
@@ -142,6 +172,13 @@ namespace aRibeiro {
         } \
         void remove(className##Function functionPtr){ \
             DelegateEntry entry (functionPtr ); \
+            if (running) { \
+                OnRun run_entry; \
+                run_entry.op_add_remove = 1; \
+                run_entry.entry = entry; \
+                m_onrun_op.push_back(run_entry); \
+                return; \
+            } \
             iteratorType it = mDelegateEntry.begin(); \
             for (; it != mDelegateEntry.end(); it++) \
                 if ((*it) == entry){ \
@@ -150,9 +187,20 @@ namespace aRibeiro {
                 } \
         } \
         void removeAll(){ \
+            if (running) { \
+                iteratorType it = mDelegateEntry.begin(); \
+                for (; it != mDelegateEntry.end(); it++){ \
+                    OnRun run_entry; \
+                    run_entry.op_add_remove = 1; \
+                    run_entry.entry = *it; \
+                    m_onrun_op.push_back(run_entry); \
+                } \
+                return; \
+            } \
             mDelegateEntry.clear(); \
         } \
-        void operator()(__VA_ARGS__){ 
+        void operator()(__VA_ARGS__){ \
+            running = true;
 
 
 #define BEGIN_DECLARE_DELEGATE_INSIDE_TEMPLATE(className, ... ) \
@@ -176,11 +224,27 @@ namespace aRibeiro {
                     return false; \
             } \
         }; \
+        struct OnRun { \
+            int op_add_remove; \
+            DelegateEntry entry; \
+        }; \
         std::vector<DelegateEntry> mDelegateEntry; \
+        std::vector<OnRun> m_onrun_op; \
+        bool running; \
         typedef typename std::vector<DelegateEntry>::iterator iteratorType; \
     public: \
+        className(){ \
+            running = false;\
+        } \
         void add(aRibeiro::DelegateFriendObject* objPtr, className##Method methodPtr){ \
             DelegateEntry entry (objPtr,methodPtr); \
+            if (running) { \
+                OnRun run_entry; \
+                run_entry.op_add_remove = 0; \
+                run_entry.entry = entry; \
+                m_onrun_op.push_back(run_entry); \
+                return; \
+            } \
             for (size_t i=0;i<mDelegateEntry.size();i++) \
                 if (mDelegateEntry[i] == entry) \
                     return; \
@@ -195,6 +259,13 @@ namespace aRibeiro {
         } \
         void add(className##Function functionPtr){ \
             DelegateEntry entry (functionPtr); \
+            if (running) { \
+                OnRun run_entry; \
+                run_entry.op_add_remove = 0; \
+                run_entry.entry = entry; \
+                m_onrun_op.push_back(run_entry); \
+                return; \
+            } \
             for (size_t i=0;i<mDelegateEntry.size();i++) \
                 if (mDelegateEntry[i] == entry) \
                     return; \
@@ -202,6 +273,13 @@ namespace aRibeiro {
         } \
         void remove(aRibeiro::DelegateFriendObject* objPtr, className##Method methodPtr){ \
             DelegateEntry entry (objPtr,methodPtr ); \
+            if (running) { \
+                OnRun run_entry; \
+                run_entry.op_add_remove = 1; \
+                run_entry.entry = entry; \
+                m_onrun_op.push_back(run_entry); \
+                return; \
+            } \
             iteratorType it = mDelegateEntry.begin(); \
             for (; it != mDelegateEntry.end(); it++) \
                 if ((*it) == entry){ \
@@ -215,6 +293,13 @@ namespace aRibeiro {
         } \
         void remove(className##Function functionPtr){ \
             DelegateEntry entry (functionPtr ); \
+            if (running) { \
+                OnRun run_entry; \
+                run_entry.op_add_remove = 1; \
+                run_entry.entry = entry; \
+                m_onrun_op.push_back(run_entry); \
+                return; \
+            } \
             iteratorType it = mDelegateEntry.begin(); \
             for (; it != mDelegateEntry.end(); it++) \
                 if ((*it) == entry){ \
@@ -223,9 +308,20 @@ namespace aRibeiro {
                 } \
         } \
         void removeAll(){ \
+            if (running) { \
+                iteratorType it = mDelegateEntry.begin(); \
+                for (; it != mDelegateEntry.end(); it++){ \
+                    OnRun run_entry; \
+                    run_entry.op_add_remove = 1; \
+                    run_entry.entry = *it; \
+                    m_onrun_op.push_back(run_entry); \
+                } \
+                return; \
+            } \
             mDelegateEntry.clear(); \
         } \
-        void operator()(__VA_ARGS__){ 
+        void operator()(__VA_ARGS__){  \
+            running = true;
 
 /// \brief Declare a Delegate Class
 ///
@@ -326,6 +422,22 @@ namespace aRibeiro {
 /// \author Alessandro Ribeiro
 ///
 #define END_DECLARE_DELEGATE ; \
+            running = false; \
+            for(size_t i = 0; i< m_onrun_op.size();i++) { \
+                if (m_onrun_op[i].op_add_remove == 0){ \
+                    if (m_onrun_op[i].entry.mObjPtr == NULL) \
+                        add(m_onrun_op[i].entry.mFunctionPtr); \
+                    else \
+                        add(m_onrun_op[i].entry.mObjPtr, m_onrun_op[i].entry.mMethodPtr); \
+                } else \
+                if (m_onrun_op[i].op_add_remove == 1){ \
+                    if (m_onrun_op[i].entry.mObjPtr == NULL) \
+                        remove(m_onrun_op[i].entry.mFunctionPtr); \
+                    else \
+                        remove(m_onrun_op[i].entry.mObjPtr, m_onrun_op[i].entry.mMethodPtr); \
+                } \
+            } \
+            m_onrun_op.clear(); \
         } \
     }
 
