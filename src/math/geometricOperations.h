@@ -170,7 +170,7 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float32x4_t dot_neon_4(const float32x4_t &a, const float32x4_t &b) {
         float32x4_t prod = vmulq_f32(a, b);
         // sum1 = [ 0+2, 1+3, 2+0, 3+1 ]
-        float32x4_t sum1 = vaddq_f32(prod, vshuffle_2301(prod));
+        float32x4_t sum1 = vaddq_f32(prod, vshuffle_1032(prod));
         // sum2 = [ 0+2 3+1, 1+3  2+0, 2+0 1+3, 3+1 0+2 ]
         float32x4_t sum2 = vaddq_f32(sum1, vshuffle_0123(sum1));
 
@@ -2862,6 +2862,9 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float maximum(const vec2 &a) {
 #ifdef ARIBEIRO_SSE2
         return _mm_f32_(max_sse_2(a.array_sse), 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t max_neon = vmaxq_f32(a.array_neon, vshuffle_1111(a.array_neon));
+        return max_neon[0];
 #else
         return (a.x > a.y) ? (a.x) : (a.y);
 #endif
@@ -2887,6 +2890,11 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float maximum(const vec3 &a) {
 #ifdef ARIBEIRO_SSE2
         return _mm_f32_(max_sse_3(a.array_sse), 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t input_3v = vshuffle_0210(a.array_neon);
+        float32x4_t max_neon = vmaxq_f32(input_3v, vshuffle_1032(input_3v));
+        max_neon = vmaxq_f32(max_neon, vshuffle_1111(max_neon));
+        return max_neon[0];
 #else
         return (a.x > a.y) ? ((a.x > a.z) ? (a.x) : (a.z)) : ((a.y > a.z) ? (a.y) : (a.z));
 #endif
@@ -2912,6 +2920,10 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float maximum(const vec4 &a) {
 #ifdef ARIBEIRO_SSE2
         return _mm_f32_(max_sse_4(a.array_sse), 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t max_neon = vmaxq_f32(a.array_neon, vshuffle_1032(a.array_neon));
+        max_neon = vmaxq_f32(max_neon, vshuffle_1111(max_neon));
+        return max_neon[0];
 #else
         return (a.x > a.y) ? ((a.x > a.z) ? ((a.x > a.w) ? (a.x) : (a.w)) : (a.z)) : ((a.y > a.z) ? ((a.y > a.w) ? (a.y) : (a.w)) : ((a.z > a.w) ? (a.z) : (a.w)));
 #endif
@@ -3039,6 +3051,9 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float minimum(const vec2 &a) {
 #ifdef ARIBEIRO_SSE2
         return _mm_f32_(min_sse_2(a.array_sse), 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t min_neon = vminq_f32(a.array_neon, vshuffle_1111(a.array_neon));
+        return min_neon[0];
 #else
         return (a.x < a.y) ? (a.x) : (a.y);
 #endif
@@ -3064,6 +3079,11 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float minimum(const vec3 &a) {
 #ifdef ARIBEIRO_SSE2
         return _mm_f32_(min_sse_3(a.array_sse), 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t input_3v = vshuffle_0210(a.array_neon);
+        float32x4_t min_neon = vminq_f32(input_3v, vshuffle_1032(input_3v));
+        min_neon = vminq_f32(min_neon, vshuffle_1111(min_neon));
+        return min_neon[0];
 #else
         return (a.x < a.y) ? ((a.x < a.z) ? (a.x) : (a.z)) : ((a.y < a.z) ? (a.y) : (a.z));
 #endif
@@ -3089,6 +3109,10 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float minimum(const vec4 &a) {
 #ifdef ARIBEIRO_SSE2
         return _mm_f32_(min_sse_4(a.array_sse), 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t min_neon = vminq_f32(a.array_neon, vshuffle_1032(a.array_neon));
+        min_neon = vminq_f32(min_neon, vshuffle_1111(min_neon));
+        return min_neon[0];
 #else
         return (a.x < a.y) ? ((a.x < a.z) ? ((a.x < a.w) ? (a.x) : (a.w)) : (a.z)) : ((a.y < a.z) ? ((a.y < a.w) ? (a.y) : (a.w)) : ((a.z < a.w) ? (a.z) : (a.w)));
 #endif
@@ -6981,6 +7005,26 @@ namespace aRibeiro {
     }
     ARIBEIRO_INLINE mat4 round(const mat4&a) {
         return mat4(round(a[0]), round(a[1]), round(a[2]), round(a[3]));
+    }
+
+
+    ARIBEIRO_INLINE void projectOnAxis(const vec3 *points, int count, const vec3 &axis, float *outMin, float *outMax)
+    {
+        float min = FLT_MAX;// double.PositiveInfinity;
+        float max = -FLT_MAX;// double.NegativeInfinity;
+        for (int i = 0; i < count; i++)
+        {
+            const vec3 &p = points[i];
+            float val = dot(axis, p);
+            min = minimum(min, val);
+            max = maximum(max, val);
+            //if (val < min)
+            //    min = val;
+            //if (val > max)
+            //    max = val;
+        }
+        *outMin = min;
+        *outMax = max;
     }
 
 

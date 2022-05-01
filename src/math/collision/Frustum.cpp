@@ -5,23 +5,6 @@
 namespace aRibeiro {
 
 namespace collision {
-    static inline void projectOnAxis(const vec3 *points, int count, const vec3 &axis, float *outMin, float *outMax)
-    {
-        float min = FLT_MAX;// double.PositiveInfinity;
-        float max = -FLT_MAX;// double.NegativeInfinity;
-        for (int i = 0; i < count; i++)
-        {
-            const vec3 &p = points[i];
-            float val = dot(axis, p);
-            if (val < min)
-                min = val;
-            if (val > max)
-                max = val;
-        }
-        *outMin = min;
-        *outMax = max;
-    }
-    
     
     void Frustum::computePlanes(const mat4& matrix, bool depth_zero_one) {
         mat4 clipMatrix = transpose(matrix);
