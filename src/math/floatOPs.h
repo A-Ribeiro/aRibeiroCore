@@ -491,6 +491,9 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float maximum(const float &a, const float &b) {
 #if defined(ARIBEIRO_SSE2)
         return _mm_f32_(_mm_max_ss(_mm_set_ss(a), _mm_set_ss(b)), 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t max_neon = vmaxq_f32( vset1(a), vset1(b) );
+        return max_neon[0];
 #else
         return (a > b) ? a : b;
 #endif
@@ -520,6 +523,9 @@ namespace aRibeiro {
     ARIBEIRO_INLINE float minimum(const float &a, const float &b) {
 #if defined(ARIBEIRO_SSE2)
         return _mm_f32_(_mm_min_ss(_mm_set_ss(a), _mm_set_ss(b)), 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t min_neon = vminq_f32( vset1(a), vset1(b) );
+        return min_neon[0];
 #else
         return (a < b) ? a : b;
 #endif
