@@ -19,28 +19,20 @@ namespace collision {
             center_right_up_depth_proj_max[i] = center_projected + dimension_2[i];
         }
 
-        /*
+        vec3 right = right_up_depth_vec[0] * dimension_2.x;
+        vec3 top = right_up_depth_vec[1] * dimension_2.y;
+        vec3 depth = right_up_depth_vec[2] * dimension_2.z;
 
-        //vec3 base_init = orientation * vec3(-dimension_2.x,-dimension_2.y,-dimension_2.z);
-        //vec3 base_target = orientation * vec3( dimension_2.x, dimension_2.y, dimension_2.z);
+        box_vertices[0] = center - right - top - depth; //000
+        box_vertices[1] = center - right - top + depth; //001
+        box_vertices[2] = center - right + top - depth; //010
+        box_vertices[3] = center - right + top + depth; //011
+        box_vertices[4] = center + right - top - depth; //100
+        box_vertices[5] = center + right - top + depth; //101
+        box_vertices[6] = center + right + top - depth; //110
+        box_vertices[7] = center + right + top + depth; //111
 
-        vec3 base_target = orientation * dimension_2;
-        vec3 base_delta = base_target * 2.0f;
-        vec3 base_init = base_target - base_delta;
-        
-        //vec3 base_delta = base_target - base_init;
-
-        base_init += center;
-        box_vertices[0] = base_init;// 000
-        box_vertices[1] = base_init + vec3(0           ,            0, base_delta.z);// 001
-        box_vertices[2] = base_init + vec3(0           , base_delta.y,            0);// 010
-        box_vertices[3] = base_init + vec3(0           , base_delta.y, base_delta.z);// 011
-        box_vertices[4] = base_init + vec3(base_delta.x,            0,            0);// 100
-        box_vertices[5] = base_init + vec3(base_delta.x,            0, base_delta.z);// 101
-        box_vertices[6] = base_init + vec3(base_delta.x, base_delta.y,            0);// 110
-        box_vertices[7] = center + base_target;                                      // 111
-
-        */
+       /*
 
         box_vertices[0] = center + orientation * vec3(-dimension_2.x,-dimension_2.y,-dimension_2.z);// 000
         box_vertices[1] = center + orientation * vec3(-dimension_2.x,-dimension_2.y, dimension_2.z);// 001
@@ -50,7 +42,7 @@ namespace collision {
         box_vertices[5] = center + orientation * vec3( dimension_2.x,-dimension_2.y, dimension_2.z);// 101
         box_vertices[6] = center + orientation * vec3( dimension_2.x, dimension_2.y,-dimension_2.z);// 110
         box_vertices[7] = center + orientation * vec3( dimension_2.x, dimension_2.y, dimension_2.z);// 111
-
+*/
     }
 
     OBB::OBB() {
