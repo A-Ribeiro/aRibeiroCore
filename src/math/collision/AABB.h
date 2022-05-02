@@ -359,7 +359,7 @@ class _SSE2_ALIGN_PRE AABB{
     ///
     static AABB fromFrustum(const Frustum& frustum);
 
-    /// \brief Create an OBB that that contains the frustum
+    /// \brief Create an AABB that that contains the OBB
     ///
     /// Example:
     ///
@@ -375,7 +375,7 @@ class _SSE2_ALIGN_PRE AABB{
     ///
     /// \author Alessandro Ribeiro
     /// \param obb the obb
-    /// \return AABB containing the line segment
+    /// \return AABB containing the OBB
     ///
     static AABB fromOBB(const OBB& obb);
     
