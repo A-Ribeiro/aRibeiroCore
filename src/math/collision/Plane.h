@@ -11,6 +11,7 @@ namespace collision {
     class Triangle;
     class LineSegment;
     class AABB;
+    class OBB;
 
     /// \brief Plane representation
     ///
@@ -374,6 +375,30 @@ namespace collision {
         /// \return true, if the aabb intersects the plane
         ///
         static bool aabbIntersectsPlane(const AABB &aabb, const Plane &plane);
+
+        /// \brief Test if a plane intersects the OBB
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// Plane plane;
+        /// OBB obb;
+        ///
+        /// if ( Plane::obbIntersectsPlane( obb, plane ) ) {
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param obb The OBB
+        /// \param plane The Plane
+        /// \return true, if the obb intersects the plane
+        ///
+        static bool obbIntersectsPlane(const OBB &obb, const Plane &plane);
 
         SSE2_CLASS_NEW_OPERATOR
 

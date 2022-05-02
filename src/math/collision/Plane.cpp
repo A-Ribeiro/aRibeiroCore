@@ -130,5 +130,9 @@ namespace collision {
         return AABB::planeIntersectsAABB(plane, b);
     }
 
+    bool Plane::obbIntersectsPlane(const OBB &obb, const Plane &plane) {
+        return OBB::planeIntersectsOBB(plane, obb);
+    }
+
 }
 }

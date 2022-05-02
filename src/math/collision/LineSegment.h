@@ -13,6 +13,7 @@ namespace collision {
     class Sphere;
     class LineSegment;
     class Triangle;
+    class OBB;
 
     /// \brief Line Segment representation
     ///
@@ -457,6 +458,57 @@ namespace collision {
             const Triangle& t,
             const vec3& p, const vec3& q,
             float *u, float *v, float *w);
+        
+
+        /// \brief Test if a line segment intersects the OBB
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// //line segment a and b
+        /// vec3 a, b;
+        /// OBB obb;
+        ///
+        /// if ( LineSegment::obbIntersectsSegment( obb, a, b ) ) {
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param obb The OBB
+        /// \param p0 line segment point a
+        /// \param p1 line segment point b
+        /// \return true, if the obb overlaps the line segment
+        ///
+        static bool obbIntersectsSegment(const OBB &obb, const vec3& p0, const vec3& p1);
+
+        /// \brief Test if a line segment intersects the OBB
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// LineSegment lineSegment;
+        /// OBB obb;
+        ///
+        /// if ( LineSegment::obbIntersectsSegment( obb, lineSegment ) ) {
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param obb The OBB
+        /// \param ls line segment
+        /// \return true, if the obb overlaps the line segment
+        ///
+        static bool obbIntersectsSegment(const OBB &obb, const LineSegment& ls);
 
 
         SSE2_CLASS_NEW_OPERATOR

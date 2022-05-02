@@ -215,5 +215,13 @@ namespace collision {
         return AABB::triangleIntersectsAABB(triangle.a, triangle.b, triangle.c, box);
     }
 
+    bool Triangle::obbIntersectsTriangle(const vec3 &v0, const vec3 &v1, const vec3 &v2, const OBB &obb){
+        return OBB::triangleIntersectsOBB(v0, v1, v2, obb);
+    }
+
+    bool Triangle::obbIntersectsTriangle(const Triangle &triangle, const OBB &obb) {
+        return OBB::triangleIntersectsOBB(triangle.a, triangle.b, triangle.c, obb);
+    }
+
 }
 }

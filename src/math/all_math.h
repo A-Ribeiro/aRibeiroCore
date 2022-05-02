@@ -30,6 +30,6 @@
 #include <aRibeiroCore/Triangle.h>
 #include <aRibeiroCore/Ray.h>
 #include <aRibeiroCore/Frustum.h>
-
+#include <aRibeiroCore/OBB.h>
 
 #endif

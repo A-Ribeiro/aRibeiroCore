@@ -83,6 +83,39 @@ namespace collision {
         for (int i = 0; i < 6; i++)
             projectOnAxis(vertices, 8, (*this)[i].normal , &minProjections[i], &maxProjections[i]);
         
+
+        //
+        // OBB calculation...
+        //
+        
+        //vec3 center = nearPlane.normal * ( (nearPlane.distance - farPlane.distance) * 0.5f );
+        vec3 right = normalize( vertices[FrustumVertex_Far_Right_Bottom] - vertices[FrustumVertex_Far_Left_Bottom] );
+        //vec3 up = normalize( vertices[FrustumVertex_Far_Right_Top] - vertices[FrustumVertex_Far_Right_Bottom] );
+        vec3 front = nearPlane.normal;
+
+        const vec4 _0001 = vec4(0, 0, 0, 1);
+        mat4 rotationBase = mat4(toVec4(right), toVec4(cross(front,right)), toVec4(front), _0001);
+
+        quat rotationBase_quat = extractQuat(
+            rotationBase
+        );
+
+        float dimension_min[3];
+        float dimension_max[3];
+
+        float center_local[3];
+        vec3 dimension;
+
+        vec3 center;// = inv( rotationBase_quat ) * center_local;
+
+        for (int i=0;i<3;i++) {
+            projectOnAxis(vertices, 8, toVec3(rotationBase[i]), &dimension_min[i], &dimension_max[i]);
+            dimension[i] = dimension_max[i] - dimension_min[i];
+            center_local[i] = (dimension_min[i] + dimension_max[i]) * 0.5f;
+            center += toVec3(rotationBase[i]) * center_local[i];
+        }
+
+        obb = OBB( center, dimension, rotationBase_quat );
     }
 
     Plane& Frustum::operator[](int idx){
@@ -153,7 +186,7 @@ namespace collision {
             vec3(aabb.max_box.x,aabb.min_box.y,aabb.min_box.z),// 100
             vec3(aabb.max_box.x,aabb.min_box.y,aabb.max_box.z),// 101
             vec3(aabb.max_box.x,aabb.max_box.y,aabb.min_box.z),// 110
-            vec3(aabb.max_box.x,aabb.max_box.y,aabb.max_box.z),// 111
+            vec3(aabb.max_box.x,aabb.max_box.y,aabb.max_box.z)// 111
         };
         
         float boxMin, boxMax;
@@ -186,6 +219,28 @@ namespace collision {
         }
         return true;
         */
+    }
+
+
+    bool Frustum::obbOverlapsFrustum(const OBB &obb, const Frustum &frustum) {
+
+        float frustumMin,frustumMax;
+        for (int i = 0; i < 3; i++)
+        {
+            projectOnAxis(frustum.vertices, 8, obb.right_up_depth_vec[i], &frustumMin, &frustumMax);
+            if (frustumMax < obb.center_right_up_depth_proj_min[i] || frustumMin > obb.center_right_up_depth_proj_max[i])
+                return false; // No intersection possible.
+        }
+
+        float boxMin, boxMax;
+        for (int i = 0; i < 6; i++) {
+            projectOnAxis(obb.box_vertices, 8, frustum[i].normal , &boxMin, &boxMax);
+            if (boxMax < frustum.minProjections[i] || boxMin > frustum.maxProjections[i])
+                return false; // No intersection possible.
+        }
+        
+        return true;
+
     }
 
 }

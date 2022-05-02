@@ -12,6 +12,7 @@ namespace collision {
     class Plane;
     class Sphere;
     class Triangle;
+    class OBB;
 
     /// \brief Ray representation
     ///
@@ -265,6 +266,39 @@ namespace collision {
         /// \return true, if the ray intersects the sphere
         ///
         static bool raycastTriangle(const Ray &ray, const Triangle &t, float *outTmin, vec3 *outNormal);
+
+        /// \brief Raycast test against an OBB
+        ///
+        /// Intersect ray R(t) = p + t*d, |d| = 1, against OBB a.
+        ///
+        /// When intersecting it returns the intersection distance tmin and normal of intersection.
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// Ray ray;
+        /// OBB obb;
+        ///
+        /// float tmin;
+        /// vec3 normal;
+        /// if ( Ray::raycastOBB(ray, obb, &tmin, &normal) ) {
+        ///     vec3 collision_ptn = ray.origin + ray.dir * tmin;
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param r The Ray
+        /// \param a The OBB
+        /// \param outTmin **return** the distance from ray origin
+        /// \param outNormal **return** the surface normal
+        /// \return true, if the ray intersects the obb
+        ///
+        static bool raycastOBB(const Ray &r, const OBB& a, float *outTmin, vec3 *outNormal);
 
         SSE2_CLASS_NEW_OPERATOR
     }_SSE2_ALIGN_POS;

@@ -8,6 +8,7 @@
 #include <aRibeiroCore/vec3.h>
 #include <aRibeiroCore/Plane.h>
 #include <aRibeiroCore/AABB.h>
+#include <aRibeiroCore/OBB.h>
 
 namespace aRibeiro {
 namespace collision {
@@ -46,6 +47,7 @@ namespace collision {
         Plane rightPlane, leftPlane, bottomPlane, topPlane, nearPlane, farPlane;
         vec3 vertices[8];
         AABB aabb;
+        OBB obb;
 
         /// \brief Access one of the 6 planes that compose this frustum
         ///
@@ -231,6 +233,30 @@ namespace collision {
         /// \return true, if the aabb overlaps the frustum
         ///
         static bool aabbOverlapsFrustum(const AABB &aabb, const Frustum &f);
+
+        /// \brief Test if a frustum overlaps the oobb
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// Frustum frustum;
+        /// OOBB oobb;
+        ///
+        /// if ( Frustum::oobbOverlapsFrustum( oobb, frustum ) ) {
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param oobb The OOBB
+        /// \param f The frustum
+        /// \return true, if the aabb overlaps the frustum
+        ///
+        static bool obbOverlapsFrustum(const OBB &obb, const Frustum &f);
 
         SSE2_CLASS_NEW_OPERATOR
 

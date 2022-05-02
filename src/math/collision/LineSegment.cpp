@@ -18,7 +18,7 @@ namespace collision {
     vec3 LineSegment::closestPointToSegment(const vec3 &p, const vec3 &a, const vec3 &b)
     {
         vec3 ab = b - a;
-        // Project p onto ab, computing parameterized position d(t)=a+ t*(b – a)
+        // Project p onto ab, computing parameterized position d(t)=a+ t*(b ï¿½ a)
         float t = dot(p - a, ab) / dot(ab, ab);
         // If outside segment, clamp t (and therefore d) to the closest endpoint
         if (t < 0.0f) t = 0.0f;
@@ -90,6 +90,14 @@ namespace collision {
         const vec3& p, const vec3& q,
         float *u, float *v, float *w) {
         return Triangle::segmentIntersectsTriangle(p, q, t.a, t.b, t.c, u, v, w);
+    }
+
+    bool LineSegment::obbIntersectsSegment(const OBB &obb, const vec3& p0, const vec3& p1) {
+        return OBB::segmentIntersectsOBB(p0, p1, obb);
+    }
+
+    bool LineSegment::obbIntersectsSegment(const OBB &obb, const LineSegment& ls) {
+        return OBB::segmentIntersectsOBB(ls.a, ls.b, obb);
     }
 
 }

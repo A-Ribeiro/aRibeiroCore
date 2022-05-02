@@ -10,6 +10,7 @@ namespace collision {
     class Sphere;
     class LineSegment;
     class AABB;
+    class OBB;
 
     /// \brief Triangle representation
     ///
@@ -495,6 +496,57 @@ namespace collision {
         /// \return true, if the aabb intersects the triangle
         ///
         static bool aabbIntersectsTriangle(const AABB &aabb, const Triangle &triangle);
+
+        /// \brief Test if a triangle intersects the OBB
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// // triangle vertex a, b, c
+        /// vec3 a, b, c;
+        /// OBB obb;
+        ///
+        /// if ( Triangle::obbIntersectsTriangle( obb, a, b, c ) ) {
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param obb The OBB
+        /// \param v0 The triangle vertex a
+        /// \param v1 The triangle vertex b
+        /// \param v2 The triangle vertex c
+        /// \return true, if the obb intersects the triangle
+        ///
+        static bool obbIntersectsTriangle(const vec3 &v0, const vec3 &v1, const vec3 &v2, const OBB &obb);
+
+        /// \brief Test if a triangle intersects the OBB
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// Triangle triangle;
+        /// OBB obb;
+        ///
+        /// if ( Triangle::obbIntersectsTriangle( obb, triangle ) ) {
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param obb The OBB
+        /// \param triangle The Triangle
+        /// \return true, if the obb intersects the triangle
+        ///
+        static bool obbIntersectsTriangle(const Triangle &t, const OBB &obb);
 
         SSE2_CLASS_NEW_OPERATOR
 

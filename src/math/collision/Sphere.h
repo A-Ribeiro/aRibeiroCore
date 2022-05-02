@@ -13,6 +13,7 @@ namespace collision {
     class AABB;
     class Frustum;
     class Triangle;
+    class OBB;
     
     /// \brief Sphere representation
     ///
@@ -606,6 +607,60 @@ namespace collision {
         /// \return true, if the triangle intersects the sphere
         ///
         static bool triangleIntersectsSphere(const Triangle& triangle, const Sphere& sphere, vec3 *penetration);
+
+        /// \brief Test if a sphere overlaps the OBB
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// vec3 sphere_center;
+        /// float sphere_radius;
+        /// OBB obb;
+        ///
+        /// vec3 penetration;
+        /// if ( Sphere::obbOverlapsSphere( obb, sphere_center, sphere_radius, &penetration ) ) {
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param obb The OBB
+        /// \param center The sphere center
+        /// \param radius The sphere radius
+        /// \param penetration **return** the amount one shape is inside the other
+        /// \return true, if the obb overlaps the sphere
+        ///
+        static bool obbOverlapsSphere(const OBB& obb, const vec3 &center, const float &radius, vec3 *penetration);
+
+        /// \brief Test if a sphere overlaps the OBB
+        ///
+        /// Example:
+        ///
+        /// \code
+        /// #include <aRibeiroCore/aRibeiroCore.h>
+        /// using namespace aRibeiro;
+        /// using namespace aRibeiro::collision;
+        ///
+        /// Sphere sphere;
+        /// OBB obb;
+        ///
+        /// vec3 penetration;
+        /// if ( Sphere::obbOverlapsSphere( obb, sphere, &penetration ) ) {
+        ///     ...
+        /// }
+        /// \endcode
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param obb The OBB
+        /// \param sphere The Sphere
+        /// \param penetration **return** the amount one shape is inside the other
+        /// \return true, if the obb overlaps the sphere
+        ///
+        static bool obbOverlapsSphere(const OBB& obb, const Sphere& sphere, vec3 *penetration);
 
         /// \brief Compute the minimum bounding sphere from four points (Tetrahedron)
         ///

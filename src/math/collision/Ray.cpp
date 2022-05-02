@@ -37,6 +37,10 @@ namespace collision {
     bool Ray::raycastTriangle(const Ray &ray, const Triangle &t, float *outT, vec3 *outNormal) {
         return Triangle::raycastTriangle(ray, t.a, t.b, t.c, outT, outNormal);
     }
+
+    bool Ray::raycastOBB(const Ray &r, const OBB& a, float *outTmin, vec3 *outNormal) {
+        return OBB::raycastOBB( r, a, outTmin, outNormal );
+    }
 }
 
 }

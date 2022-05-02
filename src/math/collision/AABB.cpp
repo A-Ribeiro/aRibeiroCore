@@ -194,12 +194,15 @@ namespace collision {
     }
 
     AABB AABB::fromFrustum(const Frustum& frustum) {
+        /*
         vec3 min = frustum.vertices[0], max = frustum.vertices[1];
         for (int i = 2; i < 8; i++) {
             min = minimum(min, frustum.vertices[i]);
             max = maximum(max, frustum.vertices[i]);
         }
         return AABB(min, max);
+        */
+        return frustum.aabb;
     }
 
 
@@ -380,7 +383,7 @@ namespace collision {
         for (int i = 0; i < 3; i++)
         {
             projectOnAxis(triangle_Vertices, 3, boxNormals[i], &triangleMin, &triangleMax);
-            if (triangleMax < box.min_box[i] - EPSILON || triangleMin > box.max_box[i] + EPSILON)
+            if ((triangleMax < box.min_box[i] - EPSILON) || (triangleMin > box.max_box[i] + EPSILON) )
                 return false; // No intersection possible.
         }
 
@@ -401,7 +404,7 @@ namespace collision {
 
         projectOnAxis(box_Vertices, 8, triangle_Normal, &boxMin, &boxMax);
 
-        if (boxMax < triangleOffset - EPSILON || boxMin > triangleOffset + EPSILON)
+        if ( (boxMax < triangleOffset - EPSILON) || (boxMin > triangleOffset + EPSILON) )
             return false; // No intersection possible.
 
         //
@@ -420,7 +423,7 @@ namespace collision {
             vec3 axis = normalize( cross(triangleEdges[i], triangle_Normal) );
             projectOnAxis(box_Vertices, 8, axis, &boxMin, &boxMax);
             projectOnAxis(triangle_Vertices, 3, axis, &triangleMin, &triangleMax);
-            if (boxMax < triangleMin - EPSILON || boxMin > triangleMax + EPSILON)
+            if ( (boxMax < triangleMin - EPSILON) || (boxMin > triangleMax + EPSILON) )
                 return false; // No intersection possible
         }
         
@@ -454,6 +457,10 @@ namespace collision {
 
     bool AABB::frustumOverlapsAABB(const Frustum &f, const AABB &aabb) {
         return Frustum::aabbOverlapsFrustum(aabb, f);
+    }
+
+    bool AABB::obbOverlapsAAB(const OBB& obb, const AABB& aabb) {
+        return OBB::aabbOverlapsOBB(aabb, obb);
     }
 
 }

@@ -175,6 +175,20 @@ namespace aRibeiro {
             return result;
         }
 
+        bool Sphere::obbOverlapsSphere(const OBB& obb, const vec3 &center, const float &radius, vec3 *penetration) {
+            bool result = OBB::sphereOverlapsOBB(center, radius, obb, penetration);
+            if (result)
+                *penetration = -(*penetration);
+            return result;
+        }
+
+        bool Sphere::obbOverlapsSphere(const OBB& obb, const Sphere& sphere, vec3 *penetration) {
+            bool result = OBB::sphereOverlapsOBB(sphere.center, sphere.radius, obb, penetration);
+            if (result)
+                *penetration = -(*penetration);
+            return result;
+        }
+
         Sphere Sphere::from4Points(const vec3&a, const vec3&b, const vec3&c, const vec3&d) {
 
             /*
