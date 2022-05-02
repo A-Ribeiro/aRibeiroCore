@@ -205,6 +205,14 @@ namespace collision {
         return frustum.aabb;
     }
 
+    AABB AABB::fromOBB(const OBB& obb) {
+        AABB aabb(obb.box_vertices[0], obb.box_vertices[1]);
+        for (int i = 2; i < 8; i++) {
+            aabb.min_box = minimum(aabb.min_box, obb.box_vertices[i]);
+            aabb.max_box = maximum(aabb.max_box, obb.box_vertices[i]);
+        }
+        return aabb;
+    }
 
     // Intersect ray R(t) = p + t*d against AABB a. When intersecting,
     // return intersection distance tmin and point q of intersection

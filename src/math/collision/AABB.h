@@ -358,6 +358,26 @@ class _SSE2_ALIGN_PRE AABB{
     /// \return AABB containing the line segment
     ///
     static AABB fromFrustum(const Frustum& frustum);
+
+    /// \brief Create an OBB that that contains the frustum
+    ///
+    /// Example:
+    ///
+    /// \code
+    /// #include <aRibeiroCore/aRibeiroCore.h>
+    /// using namespace aRibeiro;
+    /// using namespace aRibeiro::collision;
+    ///
+    /// OBB obb;
+    ///
+    /// AABB aabb = AABB::fromOBB( obb );
+    /// \endcode
+    ///
+    /// \author Alessandro Ribeiro
+    /// \param obb the obb
+    /// \return AABB containing the line segment
+    ///
+    static AABB fromOBB(const OBB& obb);
     
     /// \brief Raycast test against an AABB
     ///

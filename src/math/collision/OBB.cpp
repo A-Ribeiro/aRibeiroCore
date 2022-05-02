@@ -20,14 +20,14 @@ namespace collision {
         }
 
 
-        box_vertices[0] = center + vec3(-dimension_2.x,-dimension_2.y,-dimension_2.z);// 000
-        box_vertices[1] = center + vec3(-dimension_2.x,-dimension_2.y, dimension_2.z);// 001
-        box_vertices[2] = center + vec3(-dimension_2.x, dimension_2.y,-dimension_2.z);// 010
-        box_vertices[3] = center + vec3(-dimension_2.x, dimension_2.y, dimension_2.z);// 011
-        box_vertices[4] = center + vec3( dimension_2.x,-dimension_2.y,-dimension_2.z);// 100
-        box_vertices[5] = center + vec3( dimension_2.x,-dimension_2.y, dimension_2.z);// 101
-        box_vertices[6] = center + vec3( dimension_2.x, dimension_2.y,-dimension_2.z);// 110
-        box_vertices[7] = center + vec3( dimension_2.x, dimension_2.y, dimension_2.z);// 111
+        box_vertices[0] = center + orientation * vec3(-dimension_2.x,-dimension_2.y,-dimension_2.z);// 000
+        box_vertices[1] = center + orientation * vec3(-dimension_2.x,-dimension_2.y, dimension_2.z);// 001
+        box_vertices[2] = center + orientation * vec3(-dimension_2.x, dimension_2.y,-dimension_2.z);// 010
+        box_vertices[3] = center + orientation * vec3(-dimension_2.x, dimension_2.y, dimension_2.z);// 011
+        box_vertices[4] = center + orientation * vec3( dimension_2.x,-dimension_2.y,-dimension_2.z);// 100
+        box_vertices[5] = center + orientation * vec3( dimension_2.x,-dimension_2.y, dimension_2.z);// 101
+        box_vertices[6] = center + orientation * vec3( dimension_2.x, dimension_2.y,-dimension_2.z);// 110
+        box_vertices[7] = center + orientation * vec3( dimension_2.x, dimension_2.y, dimension_2.z);// 111
 
     }
 
