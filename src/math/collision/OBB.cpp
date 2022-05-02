@@ -27,11 +27,11 @@ namespace collision {
         base_init += center;
         box_vertices[0] = base_init;// 000
         box_vertices[1] = base_init + vec3(0           ,            0, base_delta.z);// 001
-        box_vertices[1] = base_init + vec3(0           , base_delta.y,            0);// 010
-        box_vertices[1] = base_init + vec3(0           , base_delta.y, base_delta.z);// 011
-        box_vertices[1] = base_init + vec3(base_delta.x,            0,            0);// 100
-        box_vertices[1] = base_init + vec3(base_delta.x,            0, base_delta.z);// 101
-        box_vertices[1] = base_init + vec3(base_delta.x, base_delta.y,            0);// 110
+        box_vertices[2] = base_init + vec3(0           , base_delta.y,            0);// 010
+        box_vertices[3] = base_init + vec3(0           , base_delta.y, base_delta.z);// 011
+        box_vertices[4] = base_init + vec3(base_delta.x,            0,            0);// 100
+        box_vertices[5] = base_init + vec3(base_delta.x,            0, base_delta.z);// 101
+        box_vertices[6] = base_init + vec3(base_delta.x, base_delta.y,            0);// 110
         box_vertices[7] = center + base_target;                                      // 111
 
 
