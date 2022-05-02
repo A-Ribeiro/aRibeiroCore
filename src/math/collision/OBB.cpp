@@ -19,10 +19,14 @@ namespace collision {
             center_right_up_depth_proj_max[i] = center_projected + dimension_2[i];
         }
 
-        vec3 base_init = orientation * vec3(-dimension_2.x,-dimension_2.y,-dimension_2.z);
-        vec3 base_target = orientation * vec3( dimension_2.x, dimension_2.y, dimension_2.z);
+        //vec3 base_init = orientation * vec3(-dimension_2.x,-dimension_2.y,-dimension_2.z);
+        //vec3 base_target = orientation * vec3( dimension_2.x, dimension_2.y, dimension_2.z);
 
-        vec3 base_delta = base_target - base_init;
+        vec3 base_target = orientation * dimension_2;
+        vec3 base_delta = base_target * 2.0f;
+        vec3 base_init = base_target - base_delta;
+        
+        //vec3 base_delta = base_target - base_init;
 
         base_init += center;
         box_vertices[0] = base_init;// 000
