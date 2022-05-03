@@ -281,17 +281,26 @@ namespace collision {
 
         float min, max;
 
+        /*
         vec3 a_normals[3] = {
             vec3(1,0,0),
             vec3(0,1,0),
             vec3(0,0,1)
-        };
+        };*/
+
+        vec3 b_min, b_max;
+        b_min = b_max = b.box_vertices[0];
+        for (int i = 1; i < 8; i++){
+            b_min = minimum(b_min, b.box_vertices[i]);
+            b_max = maximum(b_max, b.box_vertices[i]);
+        }
 
         //test vertices from 'b' into 'a' orientation
         for (int i = 0; i < 3; i++)
         {
-            projectOnAxis(b.box_vertices, 8, a_normals[i], &min, &max);
-            if ((max < _a.min_box[i]) || (min > _a.max_box[i]) )
+            //projectOnAxis(b.box_vertices, 8, a_normals[i], &min, &max);
+            //if ((max < _a.min_box[i]) || (min > _a.max_box[i]) )
+            if ((b_max[i] < _a.min_box[i]) || (b_min[i] > _a.max_box[i]) )
                 return false; // No intersection possible.
         }
 
