@@ -720,6 +720,18 @@ namespace collision {
         ///
         static Sphere fromTriangle(const Triangle& triangle);
 
+
+        /// \brief Compute the bounding sphere from an OBB
+        ///
+        /// **Notice:** This method might not return the minimum sphere.
+        ///
+        /// \author Alessandro Ribeiro
+        /// \param obb The OBB
+        /// \param discard_z If true, will compute just the x and y coords
+        /// \return the bouding sphere
+        ///
+        static Sphere fromOBB(const OBB& obb, bool discard_z = false);
+
         SSE2_CLASS_NEW_OPERATOR
     }_SSE2_ALIGN_POS;
 }

@@ -316,5 +316,18 @@ namespace aRibeiro {
             return Sphere(center, radius);
         }
 
+        Sphere Sphere::fromOBB(const OBB& obb, bool discard_z) {
+            if (discard_z) {
+                vec3 center = vec3(obb.center.x,obb.center.y,0);
+                float radius = length(vec3(obb.dimension_2.x,obb.dimension_2.y,0));
+                return Sphere(center, radius);
+            }
+            else {
+                vec3 center = obb.center;
+                float radius = length(obb.dimension_2);
+                return Sphere(center, radius);
+            }
+        }
+
     }
 }
