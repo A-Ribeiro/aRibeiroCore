@@ -522,7 +522,7 @@ namespace collision {
         /// \param v2 The triangle vertex c
         /// \return true, if the obb intersects the triangle
         ///
-        static bool obbIntersectsTriangle(const vec3 &v0, const vec3 &v1, const vec3 &v2, const OBB &obb);
+        static bool obbIntersectsTriangle(const OBB& obb, const vec3 &v0, const vec3 &v1, const vec3 &v2);
 
         /// \brief Test if a triangle intersects the OBB
         ///
@@ -546,7 +546,7 @@ namespace collision {
         /// \param triangle The Triangle
         /// \return true, if the obb intersects the triangle
         ///
-        static bool obbIntersectsTriangle(const Triangle &t, const OBB &obb);
+        static bool obbIntersectsTriangle(const OBB& obb, const Triangle &t);
 
         SSE2_CLASS_NEW_OPERATOR
 
