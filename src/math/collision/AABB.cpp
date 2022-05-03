@@ -467,7 +467,7 @@ namespace collision {
         return Frustum::aabbOverlapsFrustum(aabb, f);
     }
 
-    bool AABB::obbOverlapsAAB(const OBB& obb, const AABB& aabb) {
+    bool AABB::obbOverlapsAABB(const OBB& obb, const AABB& aabb) {
         return OBB::aabbOverlapsOBB(aabb, obb);
     }
 

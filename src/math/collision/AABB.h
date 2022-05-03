@@ -663,7 +663,7 @@ class _SSE2_ALIGN_PRE AABB{
     /// \param aabb The AABB
     /// \return true, if the aabb overlaps the frustum
     ///
-    static bool obbOverlapsAAB(const OBB& obb, const AABB& aabb);
+    static bool obbOverlapsAABB(const OBB& obb, const AABB& aabb);
 
     SSE2_CLASS_NEW_OPERATOR
 } _SSE2_ALIGN_POS;
