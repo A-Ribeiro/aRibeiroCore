@@ -125,6 +125,10 @@ namespace collision {
     const Plane& Frustum::operator[](int idx)const {
         return ((&rightPlane)[idx]);
     }
+
+    Frustum::Frustum() {
+
+    }
     
     Frustum::Frustum(const mat4& projection, bool depth_zero_one) {
         computePlanes(projection, depth_zero_one);

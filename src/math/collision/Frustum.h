@@ -96,6 +96,9 @@ namespace collision {
         ///
         const Plane& operator[](int idx)const;
 
+        ///default constructor
+        Frustum();
+
         /// \brief Construct a frustum from the camera projection matrix
         ///
         /// Example:
