@@ -30,7 +30,7 @@ namespace collision {
 
     void Plane::normalize() {
         float mag2 = dot(normal, normal);
-        const float TOLERANCE = 1e-4f;//0.001f;
+        const float TOLERANCE = EPSILON2;//1e-4f;//0.001f;
         if (absv(mag2) > TOLERANCE && absv(mag2 - 1.0f) > TOLERANCE)
         {
             mag2 = rsqrt(mag2);
@@ -120,7 +120,7 @@ namespace collision {
     {
         vec3 u = cross(p2.normal, p3.normal);
         float denom = dot(p1.normal, u);
-        if (absv(denom) < EPSILON)
+        if (absv(denom) < EPSILON2)
             return false; // Planes do not intersect in a point
         *outP = (p1.distance*u + cross(p1.normal, p3.distance * p2.normal - p2.distance * p3.normal)) / denom;
         return true;
