@@ -645,6 +645,7 @@ namespace aRibeiro {
     return _mm_f32_(_mm_rsqrt_ss(_mm_set_ss(v)), 0);
 #elif defined(ARIBEIRO_RSQRT_CARMACK)
     // http://www.lomont.org/papers/2003/InvSqrt.pdf
+    // https://en.wikipedia.org/wiki/Fast_inverse_square_root
     float x2, y;
     uint32_t &i = *(uint32_t *)&y;
     const float threehalfs = 1.5f;
