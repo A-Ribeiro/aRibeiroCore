@@ -641,14 +641,12 @@ namespace aRibeiro {
 
     ARIBEIRO_INLINE float rsqrt(const float &v) {
 
-#if defined(ARIBEIRO_FAST_RSQRT)
-
-#if defined(ARIBEIRO_SSE2)
+#if defined(ARIBEIRO_RSQRT_SSE2) && defined(ARIBEIRO_SSE2)
     return _mm_f32_(_mm_rsqrt_ss(_mm_set_ss(v)), 0);
-#else
+#elif defined(ARIBEIRO_RSQRT_CARMACK)
     // http://www.lomont.org/papers/2003/InvSqrt.pdf
     float x2, y;
-    long &i = *(long *)&y;
+    uint32_t &i = *(uint32_t *)&y;
     const float threehalfs = 1.5f;
     x2 = v * 0.5f;
     y = v;
@@ -659,8 +657,6 @@ namespace aRibeiro {
     //y = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration, medium precision
     //y = y * ( threehalfs - ( x2 * y * y ) ); // 3rd iteration, better precision
     return y;
-#endif
-
 #else
         return 1.0f / sqrtf( v );
 #endif
