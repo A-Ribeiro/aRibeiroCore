@@ -107,7 +107,7 @@ namespace collision {
         // If d is (near) zero, the planes are parallel (and separated)
         // or coincident, so they�re not considered intersecting
         float denom = dot(d, d);
-        if (denom < EPSILON)
+        if (denom < EPSILON2)
             return false;
         // Compute point on intersection line
         *outP = cross(p1.distance*p2.normal - p2.distance*p1.normal, d) / denom;
