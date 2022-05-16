@@ -647,6 +647,22 @@ namespace aRibeiro {
 
 #if defined(ARIBEIRO_RSQRT_SSE2) && defined(ARIBEIRO_SSE2)
     return _mm_f32_(_mm_rsqrt_ss(_mm_set_ss(v)), 0);
+#elif defined(ARIBEIRO_RSQRT_SSE2) && defined(ARIBEIRO_NEON)
+    const float &x = v;
+    float y = vrsqrtes_f32(x);
+    // from arm documentation
+    // The Newton-Raphson iteration:
+    //     y[n+1] = y[n] * (3 - x * (y[n] * y[n])) / 2
+    // converges to (1/sqrt(x)) if y0 is the result of VRSQRTE applied to x.
+    //
+    // Note: The precision did not improve after 2 iterations.
+    // way 1
+    // y = y * vrsqrtss_f32(y * y, x); // 1st iteration
+    // y = y * vrsqrtss_f32(y * y, x); // 2nd iteration
+    // way 2
+    y = y * vrsqrtss_f32(x * y, y); // 1st iteration
+    y = y * vrsqrtss_f32(x * y, y); // 2nd iteration
+    return y;
 #elif defined(ARIBEIRO_RSQRT_CARMACK)
     // http://www.lomont.org/papers/2003/InvSqrt.pdf
     // https://en.wikipedia.org/wiki/Fast_inverse_square_root
@@ -689,8 +705,6 @@ namespace aRibeiro {
     i = 0x5F1FFFF9 - ( i >> 1 );
     //y = *(float *)&i;
     y = y * ( 0.703952253f * ( 2.38924456f - x2 * y * y ) ); // 1st iteration, low precision
-    //y = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration, medium precision
-    //y = y * ( threehalfs - ( x2 * y * y ) ); // 3rd iteration, better precision
 
     return y;
 #else
