@@ -403,6 +403,10 @@ namespace aRibeiro {
         __m128 maxStep = _mm_max_ss(_mm_set_ss(value), _mm_set_ss(min));
         __m128 minStep = _mm_min_ss(maxStep, _mm_set_ss(max));
         return _mm_f32_(minStep, 0);
+#elif defined(ARIBEIRO_NEON)
+        float32x4_t max_neon = vmaxq_f32(vset1(value), vset1(min));
+        float32x4_t min_neon = vminq_f32(max_neon, vset1(max));
+        return min_neon[0];
 #else
         return (value < min) ? min : ((value > max) ? max : value);
 #endif
@@ -646,6 +650,8 @@ namespace aRibeiro {
 #elif defined(ARIBEIRO_RSQRT_CARMACK)
     // http://www.lomont.org/papers/2003/InvSqrt.pdf
     // https://en.wikipedia.org/wiki/Fast_inverse_square_root
+
+    /* original algorithm
     float x2, y;
     uint32_t &i = *(uint32_t *)&y;
     const float threehalfs = 1.5f;
@@ -657,6 +663,35 @@ namespace aRibeiro {
     y = y * ( threehalfs - ( x2 * y * y ) ); // 1st iteration, low precision
     //y = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration, medium precision
     //y = y * ( threehalfs - ( x2 * y * y ) ); // 3rd iteration, better precision
+    */
+
+    /* lomont algorithm - better starting estimative
+    float x2, y;
+    uint32_t &i = *(uint32_t *)&y;
+    const float threehalfs = 1.5f;
+    x2 = v * 0.5f;
+    y = v;
+    //i = *(long *)&y;
+    i = 0x5F375A86 - ( i >> 1 );
+    //y = *(float *)&i;
+    y = y * ( threehalfs - ( x2 * y * y ) ); // 1st iteration, low precision
+    //y = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration, medium precision
+    //y = y * ( threehalfs - ( x2 * y * y ) ); // 3rd iteration, better precision
+    */
+
+    // Jan Kadlec algorithm - 2.7x more accurate
+    float x2, y;
+    uint32_t &i = *(uint32_t *)&y;
+    //const float threehalfs = 1.5f;
+    x2 = v * 0.5f;
+    y = v;
+    //i = *(long *)&y;
+    i = 0x5F1FFFF9 - ( i >> 1 );
+    //y = *(float *)&i;
+    y = y * ( 0.703952253f * ( 2.38924456f - x2 * y * y ) ); // 1st iteration, low precision
+    //y = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration, medium precision
+    //y = y * ( threehalfs - ( x2 * y * y ) ); // 3rd iteration, better precision
+
     return y;
 #else
         return 1.0f / sqrtf( v );
