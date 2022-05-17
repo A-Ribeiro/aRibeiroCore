@@ -696,15 +696,16 @@ namespace aRibeiro {
     */
 
     // Jan Kadlec algorithm - 2.7x more accurate
-    float x2, y;
+    const float &x = v;
+    float y;
     uint32_t &i = *(uint32_t *)&y;
     //const float threehalfs = 1.5f;
-    x2 = v * 0.5f;
+    //x2 = v * 0.5f;
     y = v;
     //i = *(long *)&y;
     i = 0x5F1FFFF9 - ( i >> 1 );
     //y = *(float *)&i;
-    y = y * ( 0.703952253f * ( 2.38924456f - x2 * y * y ) ); // 1st iteration, low precision
+    y = y * ( 0.703952253f * ( 2.38924456f - (x * y) * y ) ); // 1st iteration, low precision
 
     return y;
 #else
