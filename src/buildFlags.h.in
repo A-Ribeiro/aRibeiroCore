@@ -1,0 +1,13 @@
+#ifndef __aribeiro_build_flags_H__
+#define __aribeiro_build_flags_H__
+
+// "For this is how God loved the world:
+// he gave his only Son, so that everyone
+// who believes in him may not perish
+// but may have eternal life."
+//
+// John 3:16
+
+@cmake_build_flags@
+
+#endif
